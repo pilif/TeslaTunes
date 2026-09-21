@@ -155,10 +155,15 @@ int sortOrderOfPlaylistKind(ITLibPlaylistKind kind) {
         library = [ITLibrary libraryWithAPIVersion:@"1.0" error:&error];
         if (!library) {
             NSLog(@"error getting iTunes library: %@", error);
-            NSAlert *alert = [[NSAlert alloc] init];
-            alert.messageText = [NSString stringWithFormat:@"Unable to get iTunes library information"];
-            alert.informativeText = @"You can still use the utility to copy folders, but playlist functionality will be disabled.";
             dispatch_async(dispatch_get_main_queue(), ^(){
+                NSAlert *alert = [[NSAlert alloc] init];
+                alert.messageText = @"Unable to read your Music library";
+                NSString *details = error
+                    ? [NSString stringWithFormat:@"%@ (%@, %ld)", error.localizedDescription, error.domain, (long)error.code]
+                    : @"The Music library service did not provide an error description.";
+                alert.informativeText = [NSString stringWithFormat:
+                    @"Allow TeslaTunes to access your music when macOS asks. If you previously denied access, enable TeslaTunes in System Settings → Privacy & Security → Media & Apple Music, then quit and reopen TeslaTunes.\n\n"
+                     "If access is already enabled, open Music and check that your library is available, then try again. You can still copy folders while playlists are unavailable.\n\n%@", details];
                 [alert runModal];
             });
             return nil;

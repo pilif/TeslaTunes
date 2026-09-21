@@ -1,126 +1,334 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {
-	};
+	classes = {};
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		E55A71AA1AE64A4400AB75E2 /* GenSparkleInfo */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = E55A71AC1AE64A4400AB75E2 /* Build configuration list for PBXAggregateTarget "GenSparkleInfo" */;
-			buildPhases = (
-				E55A71AB1AE64A4400AB75E2 /* ShellScript */,
-			);
-			dependencies = (
-				E55A71B01AE64A8F00AB75E2 /* PBXTargetDependency */,
-			);
-			name = GenSparkleInfo;
-			productName = GenGitVersioning;
-		};
-		E5CC88B71AB5927E00C8951F /* GenGitVersioning */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = E5CC88BA1AB5927E00C8951F /* Build configuration list for PBXAggregateTarget "GenGitVersioning" */;
-			buildPhases = (
-				E5CC88BB1AB5928F00C8951F /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = GenGitVersioning;
-			productName = GenGitVersioning;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		D47882741E692E4F00AB3980 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47882731E692E4F00AB3980 /* LetsMove.framework */; };
-		D47882761E692E8F00AB3980 /* LetsMove.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D47882731E692E4F00AB3980 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D4C763B51E627FD600433AD6 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C763B41E627FD600433AD6 /* Sparkle.framework */; };
-		D4C763B61E627FDE00433AD6 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4C763B41E627FD600433AD6 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D4DB8F9C1CCECB690069CD84 /* tag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52E87961ADD9AA900B08A74 /* tag.framework */; };
-		E502814E1ACBA133006D996C /* TableCellViewCheckmark.m in Sources */ = {isa = PBXBuildFile; fileRef = E502814D1ACBA133006D996C /* TableCellViewCheckmark.m */; };
-		E502D0C31A739D1500BE86E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E502D0C21A739D1500BE86E2 /* AppDelegate.m */; };
-		E502D0C51A739D1500BE86E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E502D0C41A739D1500BE86E2 /* main.m */; };
-		E502D0C81A739D1500BE86E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E502D0C71A739D1500BE86E2 /* ViewController.m */; };
-		E502D0CA1A739D1500BE86E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E502D0C91A739D1500BE86E2 /* Images.xcassets */; };
-		E502D0CD1A739D1500BE86E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E502D0CB1A739D1500BE86E2 /* Main.storyboard */; };
-		E52E87991ADD9F2E00B08A74 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52E87981ADD9F2E00B08A74 /* AVFoundation.framework */; };
-		E52E879B1ADD9F8F00B08A74 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52E879A1ADD9F8F00B08A74 /* AudioToolbox.framework */; };
-		E5436D291AC3D44D0068E42E /* iTunesLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5436D281AC3D44D0068E42E /* iTunesLibrary.framework */; };
-		E58A24B31AC8E04F00E8DDE4 /* PlaylistPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A24B21AC8E04F00E8DDE4 /* PlaylistPickViewController.m */; };
-		E58A24B71AC91A2A00E8DDE4 /* PlaylistSelections.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A24B61AC91A2A00E8DDE4 /* PlaylistSelections.m */; };
-		E58A24B91AC9282300E8DDE4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58A24B81AC9282300E8DDE4 /* AppKit.framework */; };
-		E59078A41AAAFE0E007A26D6 /* CopyConvertDirs.mm in Sources */ = {isa = PBXBuildFile; fileRef = E59078A31AAAFE0E007A26D6 /* CopyConvertDirs.mm */; };
-		E59078A71AAC1AD7007A26D6 /* flac_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = E59078A51AAC1AD7007A26D6 /* flac_utils.mm */; };
-		E59078AA1AAEC044007A26D6 /* Receptionist.m in Sources */ = {isa = PBXBuildFile; fileRef = E59078A91AAEC044007A26D6 /* Receptionist.m */; };
-		E5CC88BF1AB6514E00C8951F /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = E5CC88BE1AB6514E00C8951F /* Credits.html */; };
-		E5F876801ADE49D800F9A362 /* tag.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E52E87961ADD9AA900B08A74 /* tag.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02AB6C05C73312F750E85160 /* Vendor/taglib-1.13.1/taglib/ape/apeproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 096066B1E32E891482703B3B /* Vendor/taglib-1.13.1/taglib/ape/apeproperties.cpp */; };
+		039B7EF1AE38811867877BCC /* Vendor/flac-1.5.0/src/libFLAC/fixed.c in Sources */ = { isa = PBXBuildFile; fileRef = D08A1853609E53A7BF4DDEE3 /* Vendor/flac-1.5.0/src/libFLAC/fixed.c */; };
+		04CEFDE2D89C1DB24396ACF0 /* Vendor/taglib-1.13.1/taglib/ogg/oggpageheader.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 8B60AEEFF5E89D5EB3C89697 /* Vendor/taglib-1.13.1/taglib/ogg/oggpageheader.cpp */; };
+		0512EF259754FE5E3C704116 /* Vendor/taglib-1.13.1/taglib/mod/modfilebase.cpp in Sources */ = { isa = PBXBuildFile; fileRef = CFC3647A620F37E866D0285A /* Vendor/taglib-1.13.1/taglib/mod/modfilebase.cpp */; };
+		055AFB52C852DA9715F1567F /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 0B86899B05A6181CB0C379F0 /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexfile.cpp */; };
+		0655CE1A01E0E85CFCB25C98 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/privateframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 850167D6EC35FD3F18F62DB6 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/privateframe.cpp */; };
+		0723E0061A72D7E3A414A054 /* Vendor/flac-1.5.0/src/libFLAC/metadata_iterators.c in Sources */ = { isa = PBXBuildFile; fileRef = 0B0BBD6E7A9A828578B8FDB5 /* Vendor/flac-1.5.0/src/libFLAC/metadata_iterators.c */; };
+		087EC775E5573B92DFF81396 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/tableofcontentsframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = BA6EE22961E90F661854B9E9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/tableofcontentsframe.cpp */; };
+		0983908205BE95F53644E600 /* Vendor/flac-1.5.0/src/libFLAC++/stream_decoder.cpp in Sources */ = { isa = PBXBuildFile; fileRef = CF81E68F74D0246D8BAA03A0 /* Vendor/flac-1.5.0/src/libFLAC++/stream_decoder.cpp */; };
+		0A65515E01BD3513D04F538A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2extendedheader.cpp in Sources */ = { isa = PBXBuildFile; fileRef = AD0AE322D406A2C87282DB14 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2extendedheader.cpp */; };
+		0CC3F3AF19363ABF2798A474 /* Vendor/taglib-1.13.1/taglib/ape/apefile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 13F7FF3FDF766059FD843223 /* Vendor/taglib-1.13.1/taglib/ape/apefile.cpp */; };
+		108515E4225418854280AF95 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2footer.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A05BEDF2C4EDFD6D7BD280DB /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2footer.cpp */; };
+		108584B9E1905314C949EF55 /* Vendor/flac-1.5.0/src/libFLAC/memory.c in Sources */ = { isa = PBXBuildFile; fileRef = C3F5BED30E7004276BACDAF1 /* Vendor/flac-1.5.0/src/libFLAC/memory.c */; };
+		10B3F79FE943B54AA27BFB90 /* Vendor/taglib-1.13.1/taglib/it/itfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 005530C1202F28D5E5E09F8D /* Vendor/taglib-1.13.1/taglib/it/itfile.cpp */; };
+		11BB6D08413A82E221358FA8 /* Vendor/flac-1.5.0/src/libFLAC/float.c in Sources */ = { isa = PBXBuildFile; fileRef = 540F55BE72253AE3676B4467 /* Vendor/flac-1.5.0/src/libFLAC/float.c */; };
+		134F5CE93644F2B62E300D3C /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 5C6D3BB5C0B0B05C747FDB63 /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusproperties.cpp */; };
+		183C52C1F23F2E4F1073E7B9 /* Vendor/taglib-1.13.1/taglib/mod/modtag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 95B6A68110F25ADC4FC4062E /* Vendor/taglib-1.13.1/taglib/mod/modtag.cpp */; };
+		191CD023919895DFBC998121 /* Vendor/taglib-1.13.1/taglib/flac/flacpicture.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 96271B2DFF8E96BF174F3439 /* Vendor/taglib-1.13.1/taglib/flac/flacpicture.cpp */; };
+		195F53B4C3A84092FFD331FF /* Vendor/taglib-1.13.1/taglib/flac/flacfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 72CDC394374F2D09A0765F93 /* Vendor/taglib-1.13.1/taglib/flac/flacfile.cpp */; };
+		1C18B43ED888DE90043B7A69 /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudioproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 707BEDA895C73C25E78F0CC1 /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudioproperties.cpp */; };
+		20BBA3E4707A0FC93C9D823E /* Vendor/taglib-1.13.1/taglib/s3m/s3mproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 3A59B3625895F5E533823BA4 /* Vendor/taglib-1.13.1/taglib/s3m/s3mproperties.cpp */; };
+		224FEE157F718BB1F111C26F /* Vendor/taglib-1.13.1/taglib/toolkit/tfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 53F98B23A103FD306769DAF3 /* Vendor/taglib-1.13.1/taglib/toolkit/tfile.cpp */; };
+		2475D1E2915F4737ACF211A2 /* Vendor/flac-1.5.0/src/libFLAC/bitwriter.c in Sources */ = { isa = PBXBuildFile; fileRef = EB2F4B9CB15B70A7F8B2C025 /* Vendor/flac-1.5.0/src/libFLAC/bitwriter.c */; };
+		2612A100B5FA7DF8D6FEDE81 /* Vendor/taglib-1.13.1/taglib/riff/wav/wavproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 76399FB9837AF2A00C5182E2 /* Vendor/taglib-1.13.1/taglib/riff/wav/wavproperties.cpp */; };
+		2B3B8483C837C8F5107F5B3D /* Vendor/taglib-1.13.1/taglib/toolkit/tiostream.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A61CCEC4688C286003F8C384 /* Vendor/taglib-1.13.1/taglib/toolkit/tiostream.cpp */; };
+		2D5262ECF193D1E9944C4AC4 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 153C0EC69E53366CAF051FDF /* Vendor/taglib-1.13.1/taglib/mpeg/mpegfile.cpp */; };
+		2ED953EA59C34E8A63970C7F /* Vendor/taglib-1.13.1/taglib/mp4/mp4properties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 4D7D9518FB17698DB0B394DB /* Vendor/taglib-1.13.1/taglib/mp4/mp4properties.cpp */; };
+		2FFAB0C8691D2E4BB2159EE3 /* Vendor/taglib-1.13.1/taglib/toolkit/trefcounter.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 4DA390D9FD8BF05113628F2F /* Vendor/taglib-1.13.1/taglib/toolkit/trefcounter.cpp */; };
+		32438ABE99A7CE2A42D6EA2A /* TagLib in Frameworks */ = { isa = PBXBuildFile; fileRef = 1E03F2E892AC76D4E864C6CE /* libTagLib.a */; };
+		3515C2D233BA3A54A4FDC370 /* Vendor/taglib-1.13.1/taglib/asf/asfpicture.cpp in Sources */ = { isa = PBXBuildFile; fileRef = E8794D967EE8812EF040C527 /* Vendor/taglib-1.13.1/taglib/asf/asfpicture.cpp */; };
+		3A344AC996B7213BE13F3A45 /* Vendor/taglib-1.13.1/taglib/mp4/mp4atom.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 180D77EA745A3F973D925436 /* Vendor/taglib-1.13.1/taglib/mp4/mp4atom.cpp */; };
+		3ABB4803CAD5D8DC3DE4BD98 /* Vendor/taglib-1.13.1/taglib/xm/xmproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 569B1D1B2D3B55903BE1F800 /* Vendor/taglib-1.13.1/taglib/xm/xmproperties.cpp */; };
+		3E8D4D7EA8723C2D82C355E3 /* Vendor/taglib-1.13.1/taglib/ogg/xiphcomment.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 1101679B2F9F06EAE82A4372 /* Vendor/taglib-1.13.1/taglib/ogg/xiphcomment.cpp */; };
+		3FF616F46F3B06CF7E1A311F /* Vendor/taglib-1.13.1/taglib/toolkit/tdebuglistener.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 726FF03C4B75A9D988E01B7D /* Vendor/taglib-1.13.1/taglib/toolkit/tdebuglistener.cpp */; };
+		41A791F9DF8276CC9186D53D /* Vendor/flac-1.5.0/src/libFLAC/bitreader.c in Sources */ = { isa = PBXBuildFile; fileRef = 4303F03C1D219F6A03F3C7C2 /* Vendor/flac-1.5.0/src/libFLAC/bitreader.c */; };
+		4228C6BE830720A123769DB9 /* Vendor/flac-1.5.0/src/libFLAC/format.c in Sources */ = { isa = PBXBuildFile; fileRef = 84BD19BE9E24702A61479F8F /* Vendor/flac-1.5.0/src/libFLAC/format.c */; };
+		43B4C4B1E8C349B07A5C9485 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unsynchronizedlyricsframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = B142006B9CFA245747151883 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unsynchronizedlyricsframe.cpp */; };
+		43E3D4D092C77E3E0FC55A51 /* Vendor/taglib-1.13.1/taglib/asf/asfproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 2210B85D895B3AA4EF237A15 /* Vendor/taglib-1.13.1/taglib/asf/asfproperties.cpp */; };
+		46C71BE61E35AD399A22EB57 /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = F4755D0DA5608736726CFF93 /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisproperties.cpp */; };
+		47C24415A9AACA61C3C56211 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 522C09A69BDC900931834606 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackproperties.cpp */; };
+		4B90B670F51E2FC8F9A53FA6 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2framefactory.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 6FD5596A0E3022D09E1AD96E /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2framefactory.cpp */; };
+		4C7D70D779D818F347B945D3 /* Vendor/taglib-1.13.1/taglib/xm/xmfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = CDCD7968E1E980F654CC5B70 /* Vendor/taglib-1.13.1/taglib/xm/xmfile.cpp */; };
+		4E148F7A49C6E298C53BCBCE /* Vendor/taglib-1.13.1/taglib/riff/aiff/aifffile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = E2E35DEC9DAA67CD7A577874 /* Vendor/taglib-1.13.1/taglib/riff/aiff/aifffile.cpp */; };
+		5351F8133C9319840A240AE4 /* Vendor/flac-1.5.0/src/libFLAC/bitmath.c in Sources */ = { isa = PBXBuildFile; fileRef = 2AF3B4BDBFEC5D6C47564931 /* Vendor/flac-1.5.0/src/libFLAC/bitmath.c */; };
+		589B3F3B41897E020F8B41D6 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/chapterframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = FE3D9497BECD6A68C0254D3A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/chapterframe.cpp */; };
+		5C018FE8162A223623829C13 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/relativevolumeframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 7CFBF7D6007008ABDD81F1D4 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/relativevolumeframe.cpp */; };
+		5D6A1EE49846ADB15F87A2A9 /* Vendor/taglib-1.13.1/taglib/toolkit/tstring.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 615794B5161F060703CA0725 /* Vendor/taglib-1.13.1/taglib/toolkit/tstring.cpp */; };
+		5E7C214FC4CFDC1DEB301CD3 /* Vendor/taglib-1.13.1/taglib/s3m/s3mfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = EA50B24EAAFCC19CB5C01B04 /* Vendor/taglib-1.13.1/taglib/s3m/s3mfile.cpp */; };
+		5F77235B4945BC1793BBC6E5 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_avx2.c in Sources */ = { isa = PBXBuildFile; fileRef = 600185AFDFC936B015B5E7FF /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_avx2.c */; };
+		5FBE4503EC2C2ABA26C4E47F /* Vendor/taglib-1.13.1/taglib/ogg/oggfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 1D9FD732C5E617843EB4BEC9 /* Vendor/taglib-1.13.1/taglib/ogg/oggfile.cpp */; };
+		644E5889D00BBE0A70AD57E3 /* Vendor/taglib-1.13.1/taglib/ape/apefooter.cpp in Sources */ = { isa = PBXBuildFile; fileRef = FF7AB38BB8028176B15509C3 /* Vendor/taglib-1.13.1/taglib/ape/apefooter.cpp */; };
+		6451FCB6ABD7031AE346658A /* Vendor/taglib-1.13.1/taglib/mp4/mp4coverart.cpp in Sources */ = { isa = PBXBuildFile; fileRef = F16FAFB27602104A6E9FF5B9 /* Vendor/taglib-1.13.1/taglib/mp4/mp4coverart.cpp */; };
+		6501B02518F8F8952E2636CE /* Vendor/taglib-1.13.1/taglib/toolkit/tzlib.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 6CBB06CBE27C82747CF67454 /* Vendor/taglib-1.13.1/taglib/toolkit/tzlib.cpp */; };
+		65A88DD99CB57BE86C694993 /* Vendor/taglib-1.13.1/taglib/riff/rifffile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 181F7A391C86DCDC93C0594E /* Vendor/taglib-1.13.1/taglib/riff/rifffile.cpp */; };
+		66EFA07664BBA1CCC2D4D6FF /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse41.c in Sources */ = { isa = PBXBuildFile; fileRef = 3938C67341DB003B302F9503 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse41.c */; };
+		6728B0DB8897A0CC0BD24E16 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse42.c in Sources */ = { isa = PBXBuildFile; fileRef = 142995E0525522EBB0377E88 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse42.c */; };
+		67D23CD1EE8469B040B37072 /* Vendor/taglib-1.13.1/taglib/riff/aiff/aiffproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 15478B2E3096BA51115A670F /* Vendor/taglib-1.13.1/taglib/riff/aiff/aiffproperties.cpp */; };
+		6BBF0BEB2F84B21B83ACEC08 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevector.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 0472D816920768A49D6ECFFE /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevector.cpp */; };
+		6BFCE8CB2A0F9C4DFF09119C /* Vendor/taglib-1.13.1/taglib/mpeg/xingheader.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A7CF3520244043AAB1BD76AC /* Vendor/taglib-1.13.1/taglib/mpeg/xingheader.cpp */; };
+		6C029092C8E2A0621A6A66A9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2header.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 267046122E85AAD271E6ADBA /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2header.cpp */; };
+		6EAE6CD83060854B9150531A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/synchronizedlyricsframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 46077BB72F58B5FBE3CB3CD2 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/synchronizedlyricsframe.cpp */; };
+		70FB87DFF4386F6C00E5723A /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder.c in Sources */ = { isa = PBXBuildFile; fileRef = 5622AED8B07522EFA0A2885D /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder.c */; };
+		7131618FFAEBF2DB0915D3F1 /* FLAC in Frameworks */ = { isa = PBXBuildFile; fileRef = 404407DDB24F458857DD7AEF /* libFLAC.a */; };
+		723E3B1836C02909AC71DF6F /* Vendor/taglib-1.13.1/taglib/mpeg/mpegheader.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 9AC2244EF499306F99BD4524 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegheader.cpp */; };
+		72974315241E6838F96CEE86 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/popularimeterframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A620270D56F986CDCAE2ADB8 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/popularimeterframe.cpp */; };
+		77AE5A9AE8C9FB88720F538D /* Vendor/flac-1.5.0/src/libFLAC++/stream_encoder.cpp in Sources */ = { isa = PBXBuildFile; fileRef = B9A274336520E36A5D34A1B1 /* Vendor/flac-1.5.0/src/libFLAC++/stream_encoder.cpp */; };
+		78B169BD9FEDDB98836BE478 /* Vendor/taglib-1.13.1/taglib/it/itproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 4B4E9482FE1D07C1B216D822 /* Vendor/taglib-1.13.1/taglib/it/itproperties.cpp */; };
+		79499F7C4F35FC59D55C6ADF /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/urllinkframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = E8845F8D4A097EBDF7C84550 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/urllinkframe.cpp */; };
+		79ED407CC06467A147635548 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/uniquefileidentifierframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 4D838AD0D831289E9E42AE2E /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/uniquefileidentifierframe.cpp */; };
+		7A51EFD1B055CAB01A2C7D4F /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_avx2.c in Sources */ = { isa = PBXBuildFile; fileRef = 8F7931C499EB01051615F087 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_avx2.c */; };
+		7A9EBC7C2EA4681A2A8A22B0 /* Vendor/taglib-1.13.1/taglib/flac/flacmetadatablock.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 242686F9CF7ECA6A2ED96C7B /* Vendor/taglib-1.13.1/taglib/flac/flacmetadatablock.cpp */; };
+		7C3CBEB6104F90328F9A5BE8 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorstream.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 7B7876AF3349B2B59985A7D7 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorstream.cpp */; };
+		7C9BC36BFE5D1979A383EB76 /* Vendor/taglib-1.13.1/taglib/audioproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 5EB84DED55EC5BBFCA783895 /* Vendor/taglib-1.13.1/taglib/audioproperties.cpp */; };
+		7E20A917D03FED77F0AB2938 /* Vendor/taglib-1.13.1/taglib/flac/flacunknownmetadatablock.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 391D8A23F3BD72B508BFD9A5 /* Vendor/taglib-1.13.1/taglib/flac/flacunknownmetadatablock.cpp */; };
+		7E4579F1B9C7843A003B1E92 /* Vendor/taglib-1.13.1/taglib/mp4/mp4file.cpp in Sources */ = { isa = PBXBuildFile; fileRef = E5E37F04E99D30791C330A86 /* Vendor/taglib-1.13.1/taglib/mp4/mp4file.cpp */; };
+		84CBCE564862E889502D7793 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/textidentificationframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = D78C2B76F06DB5227EDE4763 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/textidentificationframe.cpp */; };
+		859A775F365D9A25D28CB11B /* Vendor/flac-1.5.0/src/libFLAC/cpu.c in Sources */ = { isa = PBXBuildFile; fileRef = 2C14990A255668206FB46216 /* Vendor/flac-1.5.0/src/libFLAC/cpu.c */; };
+		86C833441EC02B9843FD1BC9 /* Vendor/taglib-1.13.1/taglib/ogg/flac/oggflacfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 0464ADF06AE645773E59CD59 /* Vendor/taglib-1.13.1/taglib/ogg/flac/oggflacfile.cpp */; };
+		86DB634BADE87265CBB2A87A /* Vendor/taglib-1.13.1/taglib/toolkit/tdebug.cpp in Sources */ = { isa = PBXBuildFile; fileRef = CB4A3C27D4440541AFA43826 /* Vendor/taglib-1.13.1/taglib/toolkit/tdebug.cpp */; };
+		87B2A465BFAA47805847E781 /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudiofile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 5195BFA0D6B3D23B3E2125EC /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudiofile.cpp */; };
+		8AAB8B93BD9A8C8F9767C10A /* Vendor/taglib-1.13.1/taglib/fileref.cpp in Sources */ = { isa = PBXBuildFile; fileRef = FB465213B035D70EA2041415 /* Vendor/taglib-1.13.1/taglib/fileref.cpp */; };
+		8C3030D8C6F74CF1084658DE /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_fma.c in Sources */ = { isa = PBXBuildFile; fileRef = E2B629312BF371E64FCFD043 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_fma.c */; };
+		8E895CFE5D4FC1B56E5C4549 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_ssse3.c in Sources */ = { isa = PBXBuildFile; fileRef = 9D226B8B73B864D7CE8A76C5 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_ssse3.c */; };
+		8F70FC49CB5963ED49068216 /* Vendor/flac-1.5.0/src/libFLAC++/metadata.cpp in Sources */ = { isa = PBXBuildFile; fileRef = D3F5E155EA75862B0E357231 /* Vendor/flac-1.5.0/src/libFLAC++/metadata.cpp */; };
+		8FEC7D6F31BAD25046FAC486 /* Vendor/taglib-1.13.1/taglib/mp4/mp4tag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = CD08C68CB9CF02BEBB8468C7 /* Vendor/taglib-1.13.1/taglib/mp4/mp4tag.cpp */; };
+		90CF5300249EFF3304D81C8C /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1tag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = BAEF40E2C4E02A8D163FA615 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1tag.cpp */; };
+		927D2A7B8B3336E0D3D8A3A8 /* Vendor/taglib-1.13.1/taglib/mpc/mpcfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A9C26382A5E381C5CBD78C91 /* Vendor/taglib-1.13.1/taglib/mpc/mpcfile.cpp */; };
+		93E498CD20D1C97BC50D5B52 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_sse2.c in Sources */ = { isa = PBXBuildFile; fileRef = EE37ECE165FE26E0BAF3631C /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_sse2.c */; };
+		941538D148C72BE790D1BD83 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = D46468D9A5F636912E676F50 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegproperties.cpp */; };
+		965001A6FEC57BC7E837CA48 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_framing.c in Sources */ = { isa = PBXBuildFile; fileRef = E681FB98D9CCC154E68D03B1 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_framing.c */; };
+		96523C1F565C9E6107077F4C /* Vendor/taglib-1.13.1/taglib/ape/apeitem.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 871A54BD70EED6EFFB418F27 /* Vendor/taglib-1.13.1/taglib/ape/apeitem.cpp */; };
+		99A8A8908A8E5174D7ADFE81 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2synchdata.cpp in Sources */ = { isa = PBXBuildFile; fileRef = CAC0F33BE08FC68EBA4F2669 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2synchdata.cpp */; };
+		99D137AFED368563B3CBFB65 /* Vendor/taglib-1.13.1/taglib/asf/asfattribute.cpp in Sources */ = { isa = PBXBuildFile; fileRef = E59C84A66C4E05D7F60D0579 /* Vendor/taglib-1.13.1/taglib/asf/asfattribute.cpp */; };
+		9B64999D414767D1F40E4D64 /* Vendor/flac-1.5.0/src/libFLAC/stream_decoder.c in Sources */ = { isa = PBXBuildFile; fileRef = 56302138B06FA409C48D63EC /* Vendor/flac-1.5.0/src/libFLAC/stream_decoder.c */; };
+		9E1DBAB0D88A66767B17D719 /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = E90B89C5E77CFE1E1E88D22D /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusfile.cpp */; };
+		9FB4EA6BC60AB50FD7CDA5E0 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse2.c in Sources */ = { isa = PBXBuildFile; fileRef = 99827F96CB64F9E64E1BF49C /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse2.c */; };
+		A0A04369C0219E65D8C56A82 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorlist.cpp in Sources */ = { isa = PBXBuildFile; fileRef = B0C5E3370B4029FFEEACE28E /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorlist.cpp */; };
+		A226A315FE6781E0E7D13571 /* Vendor/taglib-1.13.1/taglib/asf/asffile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = EC982BA4F3ABB6821D0D035D /* Vendor/taglib-1.13.1/taglib/asf/asffile.cpp */; };
+		A266804CA73D89D95E095DC1 /* Vendor/taglib-1.13.1/taglib/toolkit/tfilestream.cpp in Sources */ = { isa = PBXBuildFile; fileRef = E8210616A55F61ACF2920EEE /* Vendor/taglib-1.13.1/taglib/toolkit/tfilestream.cpp */; };
+		A2A79B0E90DFF2F20A7911CD /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2frame.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 741063226748D199F320CC22 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2frame.cpp */; };
+		A3548F9DCE1223BD4B835A97 /* Vendor/taglib-1.13.1/taglib/mpc/mpcproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 7F50320DA2100B70F60071F2 /* Vendor/taglib-1.13.1/taglib/mpc/mpcproperties.cpp */; };
+		A461EBA6096A51CAE9C9D9E4 /* Vendor/taglib-1.13.1/taglib/flac/flacproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 03E08E71097CA90B610E5444 /* Vendor/taglib-1.13.1/taglib/flac/flacproperties.cpp */; };
+		A6FB37D3D76A51378BCF2543 /* Vendor/flac-1.5.0/src/libFLAC/md5.c in Sources */ = { isa = PBXBuildFile; fileRef = 92D22ED1779654EFB3928FF3 /* Vendor/flac-1.5.0/src/libFLAC/md5.c */; };
+		A9AE2B26B64A295B6B6F9037 /* Vendor/taglib-1.13.1/taglib/mod/modfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 792CDE9CDFDDCF5DF471F85F /* Vendor/taglib-1.13.1/taglib/mod/modfile.cpp */; };
+		AB5B9B5F8DE19C9AFB9752BF /* Vendor/taglib-1.13.1/taglib/ogg/oggpage.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A87210FDDB6C1D8607B3B713 /* Vendor/taglib-1.13.1/taglib/ogg/oggpage.cpp */; };
+		AD4F32CA789CB2DE1BA149C5 /* Vendor/taglib-1.13.1/taglib/ape/apetag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 5BA53E7DC257A11C1F2CC40F /* Vendor/taglib-1.13.1/taglib/ape/apetag.cpp */; };
+		AEC8B008D26D779304F08025 /* Vendor/taglib-1.13.1/taglib/tagunion.cpp in Sources */ = { isa = PBXBuildFile; fileRef = B9239DDB3B1149CD82035067 /* Vendor/taglib-1.13.1/taglib/tagunion.cpp */; };
+		AF19F12DF27A1A5ACD59A26D /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/ownershipframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 4FB1829AA8370B6F867AC2DF /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/ownershipframe.cpp */; };
+		AFE674176F755FA56CF35354 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse2.c in Sources */ = { isa = PBXBuildFile; fileRef = F796419EDAF523A9856F8BAB /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse2.c */; };
+		B0D0870D6CC3F8A97CD7D0F9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unknownframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 5069F178B91211E989D60F2B /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unknownframe.cpp */; };
+		B1C7E796C047774F5EC223C9 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_neon.c in Sources */ = { isa = PBXBuildFile; fileRef = 7113538A9CA3D4344EBA1BBC /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_neon.c */; };
+		B8CE3E13703D1AC02A8A1F71 /* Vendor/taglib-1.13.1/taglib/riff/wav/infotag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 6A49C3BB24FBA946FE165294 /* Vendor/taglib-1.13.1/taglib/riff/wav/infotag.cpp */; };
+		BF9C4CFEF4D793C2A4F4D00F /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = FEAD69AB45C02F6F8D7DC943 /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexproperties.cpp */; };
+		BFCA200C147CC06A0AA52B9A /* Vendor/flac-1.5.0/src/libFLAC/metadata_object.c in Sources */ = { isa = PBXBuildFile; fileRef = 05330DB63F85ADBE376A8A3A /* Vendor/flac-1.5.0/src/libFLAC/metadata_object.c */; };
+		C0C15F7C4A7FF55CE802EE9C /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/attachedpictureframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 4D6F60AB46F3A6D281B76872 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/attachedpictureframe.cpp */; };
+		C7CAFD72D5EA51213D32009C /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/generalencapsulatedobjectframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 1768A199D4F05164CD0854C9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/generalencapsulatedobjectframe.cpp */; };
+		C838B8C8C01095C44E6EEE30 /* Vendor/taglib-1.13.1/taglib/mp4/mp4item.cpp in Sources */ = { isa = PBXBuildFile; fileRef = F8C0FB7166D2E9ADFA6617CD /* Vendor/taglib-1.13.1/taglib/mp4/mp4item.cpp */; };
+		C934F746F45C5F2C5C57736D /* Vendor/flac-1.5.0/src/libFLAC/crc.c in Sources */ = { isa = PBXBuildFile; fileRef = D86963208D8AEF76B45976A2 /* Vendor/flac-1.5.0/src/libFLAC/crc.c */; };
+		CC5C4F90CE096B84D9FD703A /* Vendor/taglib-1.13.1/taglib/toolkit/tstringlist.cpp in Sources */ = { isa = PBXBuildFile; fileRef = AC3695F62EADC5B203B6AA20 /* Vendor/taglib-1.13.1/taglib/toolkit/tstringlist.cpp */; };
+		CC778425DD0CBF8E647906C8 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/commentsframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 6D3D624EF52F8C7F1FCF49FD /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/commentsframe.cpp */; };
+		D102DAF523193386CA38F1BE /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_avx2.c in Sources */ = { isa = PBXBuildFile; fileRef = 15061F3A1CA2EF9745B24453 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_avx2.c */; };
+		D41676FA5CB1F9E99B55911C /* Vendor/taglib-1.13.1/taglib/tagutils.cpp in Sources */ = { isa = PBXBuildFile; fileRef = EEFCB9124D1C44D39A8244D9 /* Vendor/taglib-1.13.1/taglib/tagutils.cpp */; };
+		D468248F65D6DE82FDCA376A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/eventtimingcodesframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = DEE1CE98243F270B95787BC0 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/eventtimingcodesframe.cpp */; };
+		D8C036C4DFB6A10C93FFF244 /* Vendor/flac-1.5.0/src/libFLAC/window.c in Sources */ = { isa = PBXBuildFile; fileRef = D252F79D2DD90F0B4BF0C217 /* Vendor/flac-1.5.0/src/libFLAC/window.c */; };
+		D9D3941652B699F67DF64AA4 /* Vendor/taglib-1.13.1/taglib/tag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A506AD081DA376253B1D4FE5 /* Vendor/taglib-1.13.1/taglib/tag.cpp */; };
+		DACFB33B90A0ED5E1104114B /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2tag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = DCDC4145558844031AB08265 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2tag.cpp */; };
+		DF2F09E26A1C5345171475AD /* ThirdPartyNotices.txt in Resources */ = { isa = PBXBuildFile; fileRef = AB7D15F70236F7B1BB20EEE6 /* TeslaTunes/ThirdPartyNotices.txt */; };
+		E374721FFC5821CDA9EF5E56 /* Vendor/taglib-1.13.1/taglib/mod/modproperties.cpp in Sources */ = { isa = PBXBuildFile; fileRef = B65E5CB8F455C0011181160E /* Vendor/taglib-1.13.1/taglib/mod/modproperties.cpp */; };
+		E44EAB42940CFC69B2480C4B /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/podcastframe.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 1621CF6B35B9B254891C695A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/podcastframe.cpp */; };
+		E502814E1ACBA133006D996C /* TableCellViewCheckmark.m in Sources */ = { isa = PBXBuildFile; fileRef = E502814D1ACBA133006D996C /* TableCellViewCheckmark.m */; };
+		E502D0C31A739D1500BE86E2 /* AppDelegate.m in Sources */ = { isa = PBXBuildFile; fileRef = E502D0C21A739D1500BE86E2 /* AppDelegate.m */; };
+		E502D0C51A739D1500BE86E2 /* main.m in Sources */ = { isa = PBXBuildFile; fileRef = E502D0C41A739D1500BE86E2 /* main.m */; };
+		E502D0C81A739D1500BE86E2 /* ViewController.m in Sources */ = { isa = PBXBuildFile; fileRef = E502D0C71A739D1500BE86E2 /* ViewController.m */; };
+		E502D0CA1A739D1500BE86E2 /* Images.xcassets in Resources */ = { isa = PBXBuildFile; fileRef = E502D0C91A739D1500BE86E2 /* Images.xcassets */; };
+		E502D0CD1A739D1500BE86E2 /* Main.storyboard in Resources */ = { isa = PBXBuildFile; fileRef = E502D0CB1A739D1500BE86E2 /* Main.storyboard */; };
+		E52E87991ADD9F2E00B08A74 /* AVFoundation.framework in Frameworks */ = { isa = PBXBuildFile; fileRef = E52E87981ADD9F2E00B08A74 /* AVFoundation.framework */; };
+		E52E879B1ADD9F8F00B08A74 /* AudioToolbox.framework in Frameworks */ = { isa = PBXBuildFile; fileRef = E52E879A1ADD9F8F00B08A74 /* AudioToolbox.framework */; };
+		E5436D291AC3D44D0068E42E /* iTunesLibrary.framework in Frameworks */ = { isa = PBXBuildFile; fileRef = E5436D281AC3D44D0068E42E /* iTunesLibrary.framework */; };
+		E58A24B31AC8E04F00E8DDE4 /* PlaylistPickViewController.m in Sources */ = { isa = PBXBuildFile; fileRef = E58A24B21AC8E04F00E8DDE4 /* PlaylistPickViewController.m */; };
+		E58A24B71AC91A2A00E8DDE4 /* PlaylistSelections.m in Sources */ = { isa = PBXBuildFile; fileRef = E58A24B61AC91A2A00E8DDE4 /* PlaylistSelections.m */; };
+		E58A24B91AC9282300E8DDE4 /* AppKit.framework in Frameworks */ = { isa = PBXBuildFile; fileRef = E58A24B81AC9282300E8DDE4 /* AppKit.framework */; };
+		E59078A41AAAFE0E007A26D6 /* CopyConvertDirs.mm in Sources */ = { isa = PBXBuildFile; fileRef = E59078A31AAAFE0E007A26D6 /* CopyConvertDirs.mm */; };
+		E59078A71AAC1AD7007A26D6 /* flac_utils.mm in Sources */ = { isa = PBXBuildFile; fileRef = E59078A51AAC1AD7007A26D6 /* flac_utils.mm */; };
+		E59078AA1AAEC044007A26D6 /* Receptionist.m in Sources */ = { isa = PBXBuildFile; fileRef = E59078A91AAEC044007A26D6 /* Receptionist.m */; };
+		E5CC88BF1AB6514E00C8951F /* Credits.html in Resources */ = { isa = PBXBuildFile; fileRef = E5CC88BE1AB6514E00C8951F /* Credits.html */; };
+		E86407E215CA4C8298F93A98 /* Vendor/taglib-1.13.1/taglib/riff/wav/wavfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 3AB85526BE9631015695833D /* Vendor/taglib-1.13.1/taglib/riff/wav/wavfile.cpp */; };
+		EBBCCDA210161DD036C4B0C1 /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = BB5863A78EDDDCA3104B23DA /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisfile.cpp */; };
+		ECAB21C8257CC810CAA1663F /* Vendor/taglib-1.13.1/taglib/toolkit/tpropertymap.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 5689C1B48651C13B6ED47C2A /* Vendor/taglib-1.13.1/taglib/toolkit/tpropertymap.cpp */; };
+		F8A678C58ED95F300406B967 /* Vendor/flac-1.5.0/src/libFLAC/lpc.c in Sources */ = { isa = PBXBuildFile; fileRef = 7E10559AE744EB6D25BD7FBE /* Vendor/flac-1.5.0/src/libFLAC/lpc.c */; };
+		FC05D4867D53053FD902AB3D /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1genres.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 02CC612600EBD58217F022A4 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1genres.cpp */; };
+		FC1BED290E852261BDEDBF88 /* Vendor/taglib-1.13.1/taglib/asf/asftag.cpp in Sources */ = { isa = PBXBuildFile; fileRef = 4C59B077397AE34948751C3A /* Vendor/taglib-1.13.1/taglib/asf/asftag.cpp */; };
+		FDF8B733BD7EDA04DA461EBB /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackfile.cpp in Sources */ = { isa = PBXBuildFile; fileRef = A30D2E6D2D351884F07B1454 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackfile.cpp */; };
+		FE486063857E058BF9896BED /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_ssse3.c in Sources */ = { isa = PBXBuildFile; fileRef = 55419A6787EAC17B4BFB76B0 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_ssse3.c */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E55A71AF1AE64A8F00AB75E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E502D0B41A739D1500BE86E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E502D0BB1A739D1500BE86E2;
-			remoteInfo = TeslaTunes;
-		};
-		E5CC88BC1AB593AA00C8951F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E502D0B41A739D1500BE86E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5CC88B71AB5927E00C8951F;
-			remoteInfo = GenGitVersioning;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E5F8767A1ADE347300F9A362 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D4C763B61E627FDE00433AD6 /* Sparkle.framework in CopyFiles */,
-				E5F876801ADE49D800F9A362 /* tag.framework in CopyFiles */,
-				D47882761E692E8F00AB3980 /* LetsMove.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		D47882731E692E4F00AB3980 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
-		D4C763B41E627FD600433AD6 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		E502814C1ACBA133006D996C /* TableCellViewCheckmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellViewCheckmark.h; sourceTree = "<group>"; };
-		E502814D1ACBA133006D996C /* TableCellViewCheckmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellViewCheckmark.m; sourceTree = "<group>"; };
-		E502D0BC1A739D1500BE86E2 /* TeslaTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeslaTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E502D0C01A739D1500BE86E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E502D0C11A739D1500BE86E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E502D0C21A739D1500BE86E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E502D0C41A739D1500BE86E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E502D0C61A739D1500BE86E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E502D0C71A739D1500BE86E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E502D0C91A739D1500BE86E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E502D0CC1A739D1500BE86E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E52E87961ADD9AA900B08A74 /* tag.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tag.framework; sourceTree = "<group>"; };
-		E52E87981ADD9F2E00B08A74 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E52E879A1ADD9F8F00B08A74 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		E5436D281AC3D44D0068E42E /* iTunesLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iTunesLibrary.framework; path = /Library/Frameworks/iTunesLibrary.framework; sourceTree = "<absolute>"; };
-		E552F2D41AD3CD6E009A9FDE /* TeslaTunes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TeslaTunes.entitlements; sourceTree = "<group>"; };
-		E58A24B11AC8E04F00E8DDE4 /* PlaylistPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistPickViewController.h; sourceTree = "<group>"; };
-		E58A24B21AC8E04F00E8DDE4 /* PlaylistPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistPickViewController.m; sourceTree = "<group>"; };
-		E58A24B51AC91A2A00E8DDE4 /* PlaylistSelections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistSelections.h; sourceTree = "<group>"; };
-		E58A24B61AC91A2A00E8DDE4 /* PlaylistSelections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistSelections.m; sourceTree = "<group>"; };
-		E58A24B81AC9282300E8DDE4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		E59078A21AAAFE0E007A26D6 /* CopyConvertDirs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyConvertDirs.h; sourceTree = "<group>"; };
-		E59078A31AAAFE0E007A26D6 /* CopyConvertDirs.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CopyConvertDirs.mm; sourceTree = "<group>"; };
-		E59078A51AAC1AD7007A26D6 /* flac_utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = flac_utils.mm; sourceTree = "<group>"; };
-		E59078A61AAC1AD7007A26D6 /* flac_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flac_utils.h; sourceTree = "<group>"; };
-		E59078A81AAEC044007A26D6 /* Receptionist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receptionist.h; sourceTree = "<group>"; };
-		E59078A91AAEC044007A26D6 /* Receptionist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receptionist.m; sourceTree = "<group>"; };
-		E59078AB1AAF9740007A26D6 /* todo and notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "todo and notes.txt"; sourceTree = "<group>"; };
-		E5CC88BE1AB6514E00C8951F /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		005530C1202F28D5E5E09F8D /* Vendor/taglib-1.13.1/taglib/it/itfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/it/itfile.cpp"; sourceTree = SOURCE_ROOT; };
+		02CC612600EBD58217F022A4 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1genres.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1genres.cpp"; sourceTree = SOURCE_ROOT; };
+		03E08E71097CA90B610E5444 /* Vendor/taglib-1.13.1/taglib/flac/flacproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/flac/flacproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		0464ADF06AE645773E59CD59 /* Vendor/taglib-1.13.1/taglib/ogg/flac/oggflacfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/flac/oggflacfile.cpp"; sourceTree = SOURCE_ROOT; };
+		0472D816920768A49D6ECFFE /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevector.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tbytevector.cpp"; sourceTree = SOURCE_ROOT; };
+		05330DB63F85ADBE376A8A3A /* Vendor/flac-1.5.0/src/libFLAC/metadata_object.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/metadata_object.c"; sourceTree = SOURCE_ROOT; };
+		096066B1E32E891482703B3B /* Vendor/taglib-1.13.1/taglib/ape/apeproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ape/apeproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		0B0BBD6E7A9A828578B8FDB5 /* Vendor/flac-1.5.0/src/libFLAC/metadata_iterators.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/metadata_iterators.c"; sourceTree = SOURCE_ROOT; };
+		0B86899B05A6181CB0C379F0 /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/speex/speexfile.cpp"; sourceTree = SOURCE_ROOT; };
+		1101679B2F9F06EAE82A4372 /* Vendor/taglib-1.13.1/taglib/ogg/xiphcomment.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/xiphcomment.cpp"; sourceTree = SOURCE_ROOT; };
+		13F7FF3FDF766059FD843223 /* Vendor/taglib-1.13.1/taglib/ape/apefile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ape/apefile.cpp"; sourceTree = SOURCE_ROOT; };
+		142995E0525522EBB0377E88 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse42.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse42.c"; sourceTree = SOURCE_ROOT; };
+		15061F3A1CA2EF9745B24453 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_avx2.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_avx2.c"; sourceTree = SOURCE_ROOT; };
+		153C0EC69E53366CAF051FDF /* Vendor/taglib-1.13.1/taglib/mpeg/mpegfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/mpegfile.cpp"; sourceTree = SOURCE_ROOT; };
+		15478B2E3096BA51115A670F /* Vendor/taglib-1.13.1/taglib/riff/aiff/aiffproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/riff/aiff/aiffproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		1621CF6B35B9B254891C695A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/podcastframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/podcastframe.cpp"; sourceTree = SOURCE_ROOT; };
+		1768A199D4F05164CD0854C9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/generalencapsulatedobjectframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/generalencapsulatedobjectframe.cpp"; sourceTree = SOURCE_ROOT; };
+		180D77EA745A3F973D925436 /* Vendor/taglib-1.13.1/taglib/mp4/mp4atom.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mp4/mp4atom.cpp"; sourceTree = SOURCE_ROOT; };
+		181F7A391C86DCDC93C0594E /* Vendor/taglib-1.13.1/taglib/riff/rifffile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/riff/rifffile.cpp"; sourceTree = SOURCE_ROOT; };
+		1D9FD732C5E617843EB4BEC9 /* Vendor/taglib-1.13.1/taglib/ogg/oggfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/oggfile.cpp"; sourceTree = SOURCE_ROOT; };
+		1E03F2E892AC76D4E864C6CE /* libTagLib.a */ = { isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTagLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2210B85D895B3AA4EF237A15 /* Vendor/taglib-1.13.1/taglib/asf/asfproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/asf/asfproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		242686F9CF7ECA6A2ED96C7B /* Vendor/taglib-1.13.1/taglib/flac/flacmetadatablock.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/flac/flacmetadatablock.cpp"; sourceTree = SOURCE_ROOT; };
+		267046122E85AAD271E6ADBA /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2header.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2header.cpp"; sourceTree = SOURCE_ROOT; };
+		2AF3B4BDBFEC5D6C47564931 /* Vendor/flac-1.5.0/src/libFLAC/bitmath.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/bitmath.c"; sourceTree = SOURCE_ROOT; };
+		2C14990A255668206FB46216 /* Vendor/flac-1.5.0/src/libFLAC/cpu.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/cpu.c"; sourceTree = SOURCE_ROOT; };
+		391D8A23F3BD72B508BFD9A5 /* Vendor/taglib-1.13.1/taglib/flac/flacunknownmetadatablock.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/flac/flacunknownmetadatablock.cpp"; sourceTree = SOURCE_ROOT; };
+		3938C67341DB003B302F9503 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse41.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse41.c"; sourceTree = SOURCE_ROOT; };
+		3A59B3625895F5E533823BA4 /* Vendor/taglib-1.13.1/taglib/s3m/s3mproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/s3m/s3mproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		3AB85526BE9631015695833D /* Vendor/taglib-1.13.1/taglib/riff/wav/wavfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/riff/wav/wavfile.cpp"; sourceTree = SOURCE_ROOT; };
+		404407DDB24F458857DD7AEF /* libFLAC.a */ = { isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFLAC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4303F03C1D219F6A03F3C7C2 /* Vendor/flac-1.5.0/src/libFLAC/bitreader.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/bitreader.c"; sourceTree = SOURCE_ROOT; };
+		46077BB72F58B5FBE3CB3CD2 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/synchronizedlyricsframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/synchronizedlyricsframe.cpp"; sourceTree = SOURCE_ROOT; };
+		4B4E9482FE1D07C1B216D822 /* Vendor/taglib-1.13.1/taglib/it/itproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/it/itproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		4C59B077397AE34948751C3A /* Vendor/taglib-1.13.1/taglib/asf/asftag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/asf/asftag.cpp"; sourceTree = SOURCE_ROOT; };
+		4D6F60AB46F3A6D281B76872 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/attachedpictureframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/attachedpictureframe.cpp"; sourceTree = SOURCE_ROOT; };
+		4D7D9518FB17698DB0B394DB /* Vendor/taglib-1.13.1/taglib/mp4/mp4properties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mp4/mp4properties.cpp"; sourceTree = SOURCE_ROOT; };
+		4D838AD0D831289E9E42AE2E /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/uniquefileidentifierframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/uniquefileidentifierframe.cpp"; sourceTree = SOURCE_ROOT; };
+		4DA390D9FD8BF05113628F2F /* Vendor/taglib-1.13.1/taglib/toolkit/trefcounter.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/trefcounter.cpp"; sourceTree = SOURCE_ROOT; };
+		4FB1829AA8370B6F867AC2DF /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/ownershipframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/ownershipframe.cpp"; sourceTree = SOURCE_ROOT; };
+		5069F178B91211E989D60F2B /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unknownframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unknownframe.cpp"; sourceTree = SOURCE_ROOT; };
+		5195BFA0D6B3D23B3E2125EC /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudiofile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/trueaudio/trueaudiofile.cpp"; sourceTree = SOURCE_ROOT; };
+		522C09A69BDC900931834606 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/wavpack/wavpackproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		53F98B23A103FD306769DAF3 /* Vendor/taglib-1.13.1/taglib/toolkit/tfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tfile.cpp"; sourceTree = SOURCE_ROOT; };
+		540F55BE72253AE3676B4467 /* Vendor/flac-1.5.0/src/libFLAC/float.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/float.c"; sourceTree = SOURCE_ROOT; };
+		55419A6787EAC17B4BFB76B0 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_ssse3.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_ssse3.c"; sourceTree = SOURCE_ROOT; };
+		5622AED8B07522EFA0A2885D /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/stream_encoder.c"; sourceTree = SOURCE_ROOT; };
+		56302138B06FA409C48D63EC /* Vendor/flac-1.5.0/src/libFLAC/stream_decoder.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/stream_decoder.c"; sourceTree = SOURCE_ROOT; };
+		5689C1B48651C13B6ED47C2A /* Vendor/taglib-1.13.1/taglib/toolkit/tpropertymap.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tpropertymap.cpp"; sourceTree = SOURCE_ROOT; };
+		569B1D1B2D3B55903BE1F800 /* Vendor/taglib-1.13.1/taglib/xm/xmproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/xm/xmproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		5BA53E7DC257A11C1F2CC40F /* Vendor/taglib-1.13.1/taglib/ape/apetag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ape/apetag.cpp"; sourceTree = SOURCE_ROOT; };
+		5C6D3BB5C0B0B05C747FDB63 /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/opus/opusproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		5EB84DED55EC5BBFCA783895 /* Vendor/taglib-1.13.1/taglib/audioproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/audioproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		600185AFDFC936B015B5E7FF /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_avx2.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_avx2.c"; sourceTree = SOURCE_ROOT; };
+		615794B5161F060703CA0725 /* Vendor/taglib-1.13.1/taglib/toolkit/tstring.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tstring.cpp"; sourceTree = SOURCE_ROOT; };
+		6A49C3BB24FBA946FE165294 /* Vendor/taglib-1.13.1/taglib/riff/wav/infotag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/riff/wav/infotag.cpp"; sourceTree = SOURCE_ROOT; };
+		6CBB06CBE27C82747CF67454 /* Vendor/taglib-1.13.1/taglib/toolkit/tzlib.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tzlib.cpp"; sourceTree = SOURCE_ROOT; };
+		6D3D624EF52F8C7F1FCF49FD /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/commentsframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/commentsframe.cpp"; sourceTree = SOURCE_ROOT; };
+		6FD5596A0E3022D09E1AD96E /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2framefactory.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2framefactory.cpp"; sourceTree = SOURCE_ROOT; };
+		707BEDA895C73C25E78F0CC1 /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudioproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/trueaudio/trueaudioproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		7113538A9CA3D4344EBA1BBC /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_neon.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_neon.c"; sourceTree = SOURCE_ROOT; };
+		726FF03C4B75A9D988E01B7D /* Vendor/taglib-1.13.1/taglib/toolkit/tdebuglistener.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tdebuglistener.cpp"; sourceTree = SOURCE_ROOT; };
+		72CDC394374F2D09A0765F93 /* Vendor/taglib-1.13.1/taglib/flac/flacfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/flac/flacfile.cpp"; sourceTree = SOURCE_ROOT; };
+		741063226748D199F320CC22 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2frame.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2frame.cpp"; sourceTree = SOURCE_ROOT; };
+		76399FB9837AF2A00C5182E2 /* Vendor/taglib-1.13.1/taglib/riff/wav/wavproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/riff/wav/wavproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		792CDE9CDFDDCF5DF471F85F /* Vendor/taglib-1.13.1/taglib/mod/modfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mod/modfile.cpp"; sourceTree = SOURCE_ROOT; };
+		7B7876AF3349B2B59985A7D7 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorstream.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorstream.cpp"; sourceTree = SOURCE_ROOT; };
+		7CFBF7D6007008ABDD81F1D4 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/relativevolumeframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/relativevolumeframe.cpp"; sourceTree = SOURCE_ROOT; };
+		7E10559AE744EB6D25BD7FBE /* Vendor/flac-1.5.0/src/libFLAC/lpc.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/lpc.c"; sourceTree = SOURCE_ROOT; };
+		7F50320DA2100B70F60071F2 /* Vendor/taglib-1.13.1/taglib/mpc/mpcproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpc/mpcproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		84BD19BE9E24702A61479F8F /* Vendor/flac-1.5.0/src/libFLAC/format.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/format.c"; sourceTree = SOURCE_ROOT; };
+		850167D6EC35FD3F18F62DB6 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/privateframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/privateframe.cpp"; sourceTree = SOURCE_ROOT; };
+		871A54BD70EED6EFFB418F27 /* Vendor/taglib-1.13.1/taglib/ape/apeitem.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ape/apeitem.cpp"; sourceTree = SOURCE_ROOT; };
+		8B60AEEFF5E89D5EB3C89697 /* Vendor/taglib-1.13.1/taglib/ogg/oggpageheader.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/oggpageheader.cpp"; sourceTree = SOURCE_ROOT; };
+		8F7931C499EB01051615F087 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_avx2.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_avx2.c"; sourceTree = SOURCE_ROOT; };
+		92D22ED1779654EFB3928FF3 /* Vendor/flac-1.5.0/src/libFLAC/md5.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/md5.c"; sourceTree = SOURCE_ROOT; };
+		95B6A68110F25ADC4FC4062E /* Vendor/taglib-1.13.1/taglib/mod/modtag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mod/modtag.cpp"; sourceTree = SOURCE_ROOT; };
+		96271B2DFF8E96BF174F3439 /* Vendor/taglib-1.13.1/taglib/flac/flacpicture.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/flac/flacpicture.cpp"; sourceTree = SOURCE_ROOT; };
+		99827F96CB64F9E64E1BF49C /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse2.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse2.c"; sourceTree = SOURCE_ROOT; };
+		9AC2244EF499306F99BD4524 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegheader.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/mpegheader.cpp"; sourceTree = SOURCE_ROOT; };
+		9D226B8B73B864D7CE8A76C5 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_ssse3.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_ssse3.c"; sourceTree = SOURCE_ROOT; };
+		A05BEDF2C4EDFD6D7BD280DB /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2footer.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2footer.cpp"; sourceTree = SOURCE_ROOT; };
+		A30D2E6D2D351884F07B1454 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/wavpack/wavpackfile.cpp"; sourceTree = SOURCE_ROOT; };
+		A506AD081DA376253B1D4FE5 /* Vendor/taglib-1.13.1/taglib/tag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/tag.cpp"; sourceTree = SOURCE_ROOT; };
+		A61CCEC4688C286003F8C384 /* Vendor/taglib-1.13.1/taglib/toolkit/tiostream.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tiostream.cpp"; sourceTree = SOURCE_ROOT; };
+		A620270D56F986CDCAE2ADB8 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/popularimeterframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/popularimeterframe.cpp"; sourceTree = SOURCE_ROOT; };
+		A7CF3520244043AAB1BD76AC /* Vendor/taglib-1.13.1/taglib/mpeg/xingheader.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/xingheader.cpp"; sourceTree = SOURCE_ROOT; };
+		A87210FDDB6C1D8607B3B713 /* Vendor/taglib-1.13.1/taglib/ogg/oggpage.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/oggpage.cpp"; sourceTree = SOURCE_ROOT; };
+		A9C26382A5E381C5CBD78C91 /* Vendor/taglib-1.13.1/taglib/mpc/mpcfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpc/mpcfile.cpp"; sourceTree = SOURCE_ROOT; };
+		AB7D15F70236F7B1BB20EEE6 /* TeslaTunes/ThirdPartyNotices.txt */ = { isa = PBXFileReference; lastKnownFileType = text; path = TeslaTunes/ThirdPartyNotices.txt; sourceTree = SOURCE_ROOT; };
+		AC3695F62EADC5B203B6AA20 /* Vendor/taglib-1.13.1/taglib/toolkit/tstringlist.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tstringlist.cpp"; sourceTree = SOURCE_ROOT; };
+		AD0AE322D406A2C87282DB14 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2extendedheader.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2extendedheader.cpp"; sourceTree = SOURCE_ROOT; };
+		B0C5E3370B4029FFEEACE28E /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorlist.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorlist.cpp"; sourceTree = SOURCE_ROOT; };
+		B142006B9CFA245747151883 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unsynchronizedlyricsframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unsynchronizedlyricsframe.cpp"; sourceTree = SOURCE_ROOT; };
+		B65E5CB8F455C0011181160E /* Vendor/taglib-1.13.1/taglib/mod/modproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mod/modproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		B9239DDB3B1149CD82035067 /* Vendor/taglib-1.13.1/taglib/tagunion.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/tagunion.cpp"; sourceTree = SOURCE_ROOT; };
+		B95AF3433C21382AE3CBB671 /* Vendor/config */ = { isa = PBXFileReference; lastKnownFileType = folder; path = Vendor/config; sourceTree = SOURCE_ROOT; };
+		B9A274336520E36A5D34A1B1 /* Vendor/flac-1.5.0/src/libFLAC++/stream_encoder.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/flac-1.5.0/src/libFLAC++/stream_encoder.cpp"; sourceTree = SOURCE_ROOT; };
+		BA6EE22961E90F661854B9E9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/tableofcontentsframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/tableofcontentsframe.cpp"; sourceTree = SOURCE_ROOT; };
+		BAEF40E2C4E02A8D163FA615 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1tag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1tag.cpp"; sourceTree = SOURCE_ROOT; };
+		BB5863A78EDDDCA3104B23DA /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisfile.cpp"; sourceTree = SOURCE_ROOT; };
+		C3F5BED30E7004276BACDAF1 /* Vendor/flac-1.5.0/src/libFLAC/memory.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/memory.c"; sourceTree = SOURCE_ROOT; };
+		CAC0F33BE08FC68EBA4F2669 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2synchdata.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2synchdata.cpp"; sourceTree = SOURCE_ROOT; };
+		CB4A3C27D4440541AFA43826 /* Vendor/taglib-1.13.1/taglib/toolkit/tdebug.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tdebug.cpp"; sourceTree = SOURCE_ROOT; };
+		CD08C68CB9CF02BEBB8468C7 /* Vendor/taglib-1.13.1/taglib/mp4/mp4tag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mp4/mp4tag.cpp"; sourceTree = SOURCE_ROOT; };
+		CDCD7968E1E980F654CC5B70 /* Vendor/taglib-1.13.1/taglib/xm/xmfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/xm/xmfile.cpp"; sourceTree = SOURCE_ROOT; };
+		CF81E68F74D0246D8BAA03A0 /* Vendor/flac-1.5.0/src/libFLAC++/stream_decoder.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/flac-1.5.0/src/libFLAC++/stream_decoder.cpp"; sourceTree = SOURCE_ROOT; };
+		CFC3647A620F37E866D0285A /* Vendor/taglib-1.13.1/taglib/mod/modfilebase.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mod/modfilebase.cpp"; sourceTree = SOURCE_ROOT; };
+		D08A1853609E53A7BF4DDEE3 /* Vendor/flac-1.5.0/src/libFLAC/fixed.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/fixed.c"; sourceTree = SOURCE_ROOT; };
+		D252F79D2DD90F0B4BF0C217 /* Vendor/flac-1.5.0/src/libFLAC/window.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/window.c"; sourceTree = SOURCE_ROOT; };
+		D3F5E155EA75862B0E357231 /* Vendor/flac-1.5.0/src/libFLAC++/metadata.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/flac-1.5.0/src/libFLAC++/metadata.cpp"; sourceTree = SOURCE_ROOT; };
+		D46468D9A5F636912E676F50 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/mpegproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		D78C2B76F06DB5227EDE4763 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/textidentificationframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/textidentificationframe.cpp"; sourceTree = SOURCE_ROOT; };
+		D86963208D8AEF76B45976A2 /* Vendor/flac-1.5.0/src/libFLAC/crc.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/crc.c"; sourceTree = SOURCE_ROOT; };
+		DCDC4145558844031AB08265 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2tag.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2tag.cpp"; sourceTree = SOURCE_ROOT; };
+		DEE1CE98243F270B95787BC0 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/eventtimingcodesframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/eventtimingcodesframe.cpp"; sourceTree = SOURCE_ROOT; };
+		E2B629312BF371E64FCFD043 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_fma.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_fma.c"; sourceTree = SOURCE_ROOT; };
+		E2E35DEC9DAA67CD7A577874 /* Vendor/taglib-1.13.1/taglib/riff/aiff/aifffile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/riff/aiff/aifffile.cpp"; sourceTree = SOURCE_ROOT; };
+		E502814C1ACBA133006D996C /* TableCellViewCheckmark.h */ = { path = TableCellViewCheckmark.h; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; };
+		E502814D1ACBA133006D996C /* TableCellViewCheckmark.m */ = { path = TableCellViewCheckmark.m; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; };
+		E502D0BC1A739D1500BE86E2 /* TeslaTunes.app */ = { path = TeslaTunes.app; isa = PBXFileReference; includeInIndex = 0; explicitFileType = wrapper.application; sourceTree = BUILT_PRODUCTS_DIR; };
+		E502D0C01A739D1500BE86E2 /* Info.plist */ = { path = Info.plist; isa = PBXFileReference; lastKnownFileType = text.plist.xml; sourceTree = "<group>"; };
+		E502D0C11A739D1500BE86E2 /* AppDelegate.h */ = { path = AppDelegate.h; isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; sourceTree = "<group>"; };
+		E502D0C21A739D1500BE86E2 /* AppDelegate.m */ = { path = AppDelegate.m; isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; sourceTree = "<group>"; };
+		E502D0C41A739D1500BE86E2 /* main.m */ = { path = main.m; isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; sourceTree = "<group>"; };
+		E502D0C61A739D1500BE86E2 /* ViewController.h */ = { path = ViewController.h; isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; sourceTree = "<group>"; };
+		E502D0C71A739D1500BE86E2 /* ViewController.m */ = { path = ViewController.m; isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; sourceTree = "<group>"; };
+		E502D0C91A739D1500BE86E2 /* Images.xcassets */ = { path = Images.xcassets; isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; sourceTree = "<group>"; };
+		E502D0CC1A739D1500BE86E2 /* Base */ = { path = Base.lproj/Main.storyboard; isa = PBXFileReference; name = Base; lastKnownFileType = file.storyboard; sourceTree = "<group>"; };
+		E52E87981ADD9F2E00B08A74 /* AVFoundation.framework */ = { path = System/Library/Frameworks/AVFoundation.framework; isa = PBXFileReference; name = AVFoundation.framework; lastKnownFileType = wrapper.framework; sourceTree = SDKROOT; };
+		E52E879A1ADD9F8F00B08A74 /* AudioToolbox.framework */ = { path = System/Library/Frameworks/AudioToolbox.framework; isa = PBXFileReference; name = AudioToolbox.framework; lastKnownFileType = wrapper.framework; sourceTree = SDKROOT; };
+		E5436D281AC3D44D0068E42E /* iTunesLibrary.framework */ = { path = System/Library/Frameworks/iTunesLibrary.framework; isa = PBXFileReference; name = iTunesLibrary.framework; lastKnownFileType = wrapper.framework; sourceTree = SDKROOT; };
+		E552F2D41AD3CD6E009A9FDE /* TeslaTunes.entitlements */ = { path = TeslaTunes.entitlements; isa = PBXFileReference; lastKnownFileType = text.xml; sourceTree = "<group>"; };
+		E58A24B11AC8E04F00E8DDE4 /* PlaylistPickViewController.h */ = { path = PlaylistPickViewController.h; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; };
+		E58A24B21AC8E04F00E8DDE4 /* PlaylistPickViewController.m */ = { path = PlaylistPickViewController.m; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; };
+		E58A24B51AC91A2A00E8DDE4 /* PlaylistSelections.h */ = { path = PlaylistSelections.h; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; };
+		E58A24B61AC91A2A00E8DDE4 /* PlaylistSelections.m */ = { path = PlaylistSelections.m; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; };
+		E58A24B81AC9282300E8DDE4 /* AppKit.framework */ = { path = System/Library/Frameworks/AppKit.framework; isa = PBXFileReference; name = AppKit.framework; lastKnownFileType = wrapper.framework; sourceTree = SDKROOT; };
+		E59078A21AAAFE0E007A26D6 /* CopyConvertDirs.h */ = { path = CopyConvertDirs.h; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; };
+		E59078A31AAAFE0E007A26D6 /* CopyConvertDirs.mm */ = { path = CopyConvertDirs.mm; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; };
+		E59078A51AAC1AD7007A26D6 /* flac_utils.mm */ = { path = flac_utils.mm; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; };
+		E59078A61AAC1AD7007A26D6 /* flac_utils.h */ = { path = flac_utils.h; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; };
+		E59078A81AAEC044007A26D6 /* Receptionist.h */ = { path = Receptionist.h; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; };
+		E59078A91AAEC044007A26D6 /* Receptionist.m */ = { path = Receptionist.m; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; };
+		E59078AB1AAF9740007A26D6 /* todo and notes.txt */ = { path = "todo and notes.txt"; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text; };
+		E59C84A66C4E05D7F60D0579 /* Vendor/taglib-1.13.1/taglib/asf/asfattribute.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/asf/asfattribute.cpp"; sourceTree = SOURCE_ROOT; };
+		E5CC88BE1AB6514E00C8951F /* Credits.html */ = { path = Credits.html; isa = PBXFileReference; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.html; };
+		E5E37F04E99D30791C330A86 /* Vendor/taglib-1.13.1/taglib/mp4/mp4file.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mp4/mp4file.cpp"; sourceTree = SOURCE_ROOT; };
+		E681FB98D9CCC154E68D03B1 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_framing.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/stream_encoder_framing.c"; sourceTree = SOURCE_ROOT; };
+		E8210616A55F61ACF2920EEE /* Vendor/taglib-1.13.1/taglib/toolkit/tfilestream.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/toolkit/tfilestream.cpp"; sourceTree = SOURCE_ROOT; };
+		E8794D967EE8812EF040C527 /* Vendor/taglib-1.13.1/taglib/asf/asfpicture.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/asf/asfpicture.cpp"; sourceTree = SOURCE_ROOT; };
+		E8845F8D4A097EBDF7C84550 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/urllinkframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/urllinkframe.cpp"; sourceTree = SOURCE_ROOT; };
+		E90B89C5E77CFE1E1E88D22D /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/opus/opusfile.cpp"; sourceTree = SOURCE_ROOT; };
+		EA50B24EAAFCC19CB5C01B04 /* Vendor/taglib-1.13.1/taglib/s3m/s3mfile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/s3m/s3mfile.cpp"; sourceTree = SOURCE_ROOT; };
+		EB2F4B9CB15B70A7F8B2C025 /* Vendor/flac-1.5.0/src/libFLAC/bitwriter.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/bitwriter.c"; sourceTree = SOURCE_ROOT; };
+		EC982BA4F3ABB6821D0D035D /* Vendor/taglib-1.13.1/taglib/asf/asffile.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/asf/asffile.cpp"; sourceTree = SOURCE_ROOT; };
+		EE37ECE165FE26E0BAF3631C /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_sse2.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_sse2.c"; sourceTree = SOURCE_ROOT; };
+		EEFCB9124D1C44D39A8244D9 /* Vendor/taglib-1.13.1/taglib/tagutils.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/tagutils.cpp"; sourceTree = SOURCE_ROOT; };
+		F16FAFB27602104A6E9FF5B9 /* Vendor/taglib-1.13.1/taglib/mp4/mp4coverart.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mp4/mp4coverart.cpp"; sourceTree = SOURCE_ROOT; };
+		F4755D0DA5608736726CFF93 /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		F796419EDAF523A9856F8BAB /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse2.c */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse2.c"; sourceTree = SOURCE_ROOT; };
+		F8C0FB7166D2E9ADFA6617CD /* Vendor/taglib-1.13.1/taglib/mp4/mp4item.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mp4/mp4item.cpp"; sourceTree = SOURCE_ROOT; };
+		FB465213B035D70EA2041415 /* Vendor/taglib-1.13.1/taglib/fileref.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/fileref.cpp"; sourceTree = SOURCE_ROOT; };
+		FE133386A50BDB7F28B172AA /* Vendor/README.md */ = { isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Vendor/README.md; sourceTree = SOURCE_ROOT; };
+		FE3D9497BECD6A68C0254D3A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/chapterframe.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/chapterframe.cpp"; sourceTree = SOURCE_ROOT; };
+		FEAD69AB45C02F6F8D7DC943 /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexproperties.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ogg/speex/speexproperties.cpp"; sourceTree = SOURCE_ROOT; };
+		FF7AB38BB8028176B15509C3 /* Vendor/taglib-1.13.1/taglib/ape/apefooter.cpp */ = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vendor/taglib-1.13.1/taglib/ape/apefooter.cpp"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,37 +336,199 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DB8F9C1CCECB690069CD84 /* tag.framework in Frameworks */,
-				D4C763B51E627FD600433AD6 /* Sparkle.framework in Frameworks */,
 				E52E879B1ADD9F8F00B08A74 /* AudioToolbox.framework in Frameworks */,
 				E52E87991ADD9F2E00B08A74 /* AVFoundation.framework in Frameworks */,
-				D47882741E692E4F00AB3980 /* LetsMove.framework in Frameworks */,
 				E58A24B91AC9282300E8DDE4 /* AppKit.framework in Frameworks */,
 				E5436D291AC3D44D0068E42E /* iTunesLibrary.framework in Frameworks */,
+				7131618FFAEBF2DB0915D3F1 /* FLAC in Frameworks */,
+				32438ABE99A7CE2A42D6EA2A /* TagLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FF2829F8B31008B77228618 /* TagLib Sources */ = {
+			isa = PBXGroup;
+			children = (
+				13F7FF3FDF766059FD843223 /* Vendor/taglib-1.13.1/taglib/ape/apefile.cpp */,
+				FF7AB38BB8028176B15509C3 /* Vendor/taglib-1.13.1/taglib/ape/apefooter.cpp */,
+				871A54BD70EED6EFFB418F27 /* Vendor/taglib-1.13.1/taglib/ape/apeitem.cpp */,
+				096066B1E32E891482703B3B /* Vendor/taglib-1.13.1/taglib/ape/apeproperties.cpp */,
+				5BA53E7DC257A11C1F2CC40F /* Vendor/taglib-1.13.1/taglib/ape/apetag.cpp */,
+				E59C84A66C4E05D7F60D0579 /* Vendor/taglib-1.13.1/taglib/asf/asfattribute.cpp */,
+				EC982BA4F3ABB6821D0D035D /* Vendor/taglib-1.13.1/taglib/asf/asffile.cpp */,
+				E8794D967EE8812EF040C527 /* Vendor/taglib-1.13.1/taglib/asf/asfpicture.cpp */,
+				2210B85D895B3AA4EF237A15 /* Vendor/taglib-1.13.1/taglib/asf/asfproperties.cpp */,
+				4C59B077397AE34948751C3A /* Vendor/taglib-1.13.1/taglib/asf/asftag.cpp */,
+				5EB84DED55EC5BBFCA783895 /* Vendor/taglib-1.13.1/taglib/audioproperties.cpp */,
+				FB465213B035D70EA2041415 /* Vendor/taglib-1.13.1/taglib/fileref.cpp */,
+				72CDC394374F2D09A0765F93 /* Vendor/taglib-1.13.1/taglib/flac/flacfile.cpp */,
+				242686F9CF7ECA6A2ED96C7B /* Vendor/taglib-1.13.1/taglib/flac/flacmetadatablock.cpp */,
+				96271B2DFF8E96BF174F3439 /* Vendor/taglib-1.13.1/taglib/flac/flacpicture.cpp */,
+				03E08E71097CA90B610E5444 /* Vendor/taglib-1.13.1/taglib/flac/flacproperties.cpp */,
+				391D8A23F3BD72B508BFD9A5 /* Vendor/taglib-1.13.1/taglib/flac/flacunknownmetadatablock.cpp */,
+				005530C1202F28D5E5E09F8D /* Vendor/taglib-1.13.1/taglib/it/itfile.cpp */,
+				4B4E9482FE1D07C1B216D822 /* Vendor/taglib-1.13.1/taglib/it/itproperties.cpp */,
+				792CDE9CDFDDCF5DF471F85F /* Vendor/taglib-1.13.1/taglib/mod/modfile.cpp */,
+				CFC3647A620F37E866D0285A /* Vendor/taglib-1.13.1/taglib/mod/modfilebase.cpp */,
+				B65E5CB8F455C0011181160E /* Vendor/taglib-1.13.1/taglib/mod/modproperties.cpp */,
+				95B6A68110F25ADC4FC4062E /* Vendor/taglib-1.13.1/taglib/mod/modtag.cpp */,
+				180D77EA745A3F973D925436 /* Vendor/taglib-1.13.1/taglib/mp4/mp4atom.cpp */,
+				F16FAFB27602104A6E9FF5B9 /* Vendor/taglib-1.13.1/taglib/mp4/mp4coverart.cpp */,
+				E5E37F04E99D30791C330A86 /* Vendor/taglib-1.13.1/taglib/mp4/mp4file.cpp */,
+				F8C0FB7166D2E9ADFA6617CD /* Vendor/taglib-1.13.1/taglib/mp4/mp4item.cpp */,
+				4D7D9518FB17698DB0B394DB /* Vendor/taglib-1.13.1/taglib/mp4/mp4properties.cpp */,
+				CD08C68CB9CF02BEBB8468C7 /* Vendor/taglib-1.13.1/taglib/mp4/mp4tag.cpp */,
+				A9C26382A5E381C5CBD78C91 /* Vendor/taglib-1.13.1/taglib/mpc/mpcfile.cpp */,
+				7F50320DA2100B70F60071F2 /* Vendor/taglib-1.13.1/taglib/mpc/mpcproperties.cpp */,
+				02CC612600EBD58217F022A4 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1genres.cpp */,
+				BAEF40E2C4E02A8D163FA615 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1tag.cpp */,
+				4D6F60AB46F3A6D281B76872 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/attachedpictureframe.cpp */,
+				FE3D9497BECD6A68C0254D3A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/chapterframe.cpp */,
+				6D3D624EF52F8C7F1FCF49FD /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/commentsframe.cpp */,
+				DEE1CE98243F270B95787BC0 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/eventtimingcodesframe.cpp */,
+				1768A199D4F05164CD0854C9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/generalencapsulatedobjectframe.cpp */,
+				4FB1829AA8370B6F867AC2DF /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/ownershipframe.cpp */,
+				1621CF6B35B9B254891C695A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/podcastframe.cpp */,
+				A620270D56F986CDCAE2ADB8 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/popularimeterframe.cpp */,
+				850167D6EC35FD3F18F62DB6 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/privateframe.cpp */,
+				7CFBF7D6007008ABDD81F1D4 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/relativevolumeframe.cpp */,
+				46077BB72F58B5FBE3CB3CD2 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/synchronizedlyricsframe.cpp */,
+				BA6EE22961E90F661854B9E9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/tableofcontentsframe.cpp */,
+				D78C2B76F06DB5227EDE4763 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/textidentificationframe.cpp */,
+				4D838AD0D831289E9E42AE2E /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/uniquefileidentifierframe.cpp */,
+				5069F178B91211E989D60F2B /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unknownframe.cpp */,
+				B142006B9CFA245747151883 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unsynchronizedlyricsframe.cpp */,
+				E8845F8D4A097EBDF7C84550 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/urllinkframe.cpp */,
+				AD0AE322D406A2C87282DB14 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2extendedheader.cpp */,
+				A05BEDF2C4EDFD6D7BD280DB /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2footer.cpp */,
+				741063226748D199F320CC22 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2frame.cpp */,
+				6FD5596A0E3022D09E1AD96E /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2framefactory.cpp */,
+				267046122E85AAD271E6ADBA /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2header.cpp */,
+				CAC0F33BE08FC68EBA4F2669 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2synchdata.cpp */,
+				DCDC4145558844031AB08265 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2tag.cpp */,
+				153C0EC69E53366CAF051FDF /* Vendor/taglib-1.13.1/taglib/mpeg/mpegfile.cpp */,
+				9AC2244EF499306F99BD4524 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegheader.cpp */,
+				D46468D9A5F636912E676F50 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegproperties.cpp */,
+				A7CF3520244043AAB1BD76AC /* Vendor/taglib-1.13.1/taglib/mpeg/xingheader.cpp */,
+				0464ADF06AE645773E59CD59 /* Vendor/taglib-1.13.1/taglib/ogg/flac/oggflacfile.cpp */,
+				1D9FD732C5E617843EB4BEC9 /* Vendor/taglib-1.13.1/taglib/ogg/oggfile.cpp */,
+				A87210FDDB6C1D8607B3B713 /* Vendor/taglib-1.13.1/taglib/ogg/oggpage.cpp */,
+				8B60AEEFF5E89D5EB3C89697 /* Vendor/taglib-1.13.1/taglib/ogg/oggpageheader.cpp */,
+				E90B89C5E77CFE1E1E88D22D /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusfile.cpp */,
+				5C6D3BB5C0B0B05C747FDB63 /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusproperties.cpp */,
+				0B86899B05A6181CB0C379F0 /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexfile.cpp */,
+				FEAD69AB45C02F6F8D7DC943 /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexproperties.cpp */,
+				BB5863A78EDDDCA3104B23DA /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisfile.cpp */,
+				F4755D0DA5608736726CFF93 /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisproperties.cpp */,
+				1101679B2F9F06EAE82A4372 /* Vendor/taglib-1.13.1/taglib/ogg/xiphcomment.cpp */,
+				E2E35DEC9DAA67CD7A577874 /* Vendor/taglib-1.13.1/taglib/riff/aiff/aifffile.cpp */,
+				15478B2E3096BA51115A670F /* Vendor/taglib-1.13.1/taglib/riff/aiff/aiffproperties.cpp */,
+				181F7A391C86DCDC93C0594E /* Vendor/taglib-1.13.1/taglib/riff/rifffile.cpp */,
+				6A49C3BB24FBA946FE165294 /* Vendor/taglib-1.13.1/taglib/riff/wav/infotag.cpp */,
+				3AB85526BE9631015695833D /* Vendor/taglib-1.13.1/taglib/riff/wav/wavfile.cpp */,
+				76399FB9837AF2A00C5182E2 /* Vendor/taglib-1.13.1/taglib/riff/wav/wavproperties.cpp */,
+				EA50B24EAAFCC19CB5C01B04 /* Vendor/taglib-1.13.1/taglib/s3m/s3mfile.cpp */,
+				3A59B3625895F5E533823BA4 /* Vendor/taglib-1.13.1/taglib/s3m/s3mproperties.cpp */,
+				A506AD081DA376253B1D4FE5 /* Vendor/taglib-1.13.1/taglib/tag.cpp */,
+				B9239DDB3B1149CD82035067 /* Vendor/taglib-1.13.1/taglib/tagunion.cpp */,
+				EEFCB9124D1C44D39A8244D9 /* Vendor/taglib-1.13.1/taglib/tagutils.cpp */,
+				0472D816920768A49D6ECFFE /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevector.cpp */,
+				B0C5E3370B4029FFEEACE28E /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorlist.cpp */,
+				7B7876AF3349B2B59985A7D7 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorstream.cpp */,
+				CB4A3C27D4440541AFA43826 /* Vendor/taglib-1.13.1/taglib/toolkit/tdebug.cpp */,
+				726FF03C4B75A9D988E01B7D /* Vendor/taglib-1.13.1/taglib/toolkit/tdebuglistener.cpp */,
+				53F98B23A103FD306769DAF3 /* Vendor/taglib-1.13.1/taglib/toolkit/tfile.cpp */,
+				E8210616A55F61ACF2920EEE /* Vendor/taglib-1.13.1/taglib/toolkit/tfilestream.cpp */,
+				A61CCEC4688C286003F8C384 /* Vendor/taglib-1.13.1/taglib/toolkit/tiostream.cpp */,
+				5689C1B48651C13B6ED47C2A /* Vendor/taglib-1.13.1/taglib/toolkit/tpropertymap.cpp */,
+				4DA390D9FD8BF05113628F2F /* Vendor/taglib-1.13.1/taglib/toolkit/trefcounter.cpp */,
+				615794B5161F060703CA0725 /* Vendor/taglib-1.13.1/taglib/toolkit/tstring.cpp */,
+				AC3695F62EADC5B203B6AA20 /* Vendor/taglib-1.13.1/taglib/toolkit/tstringlist.cpp */,
+				6CBB06CBE27C82747CF67454 /* Vendor/taglib-1.13.1/taglib/toolkit/tzlib.cpp */,
+				5195BFA0D6B3D23B3E2125EC /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudiofile.cpp */,
+				707BEDA895C73C25E78F0CC1 /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudioproperties.cpp */,
+				A30D2E6D2D351884F07B1454 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackfile.cpp */,
+				522C09A69BDC900931834606 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackproperties.cpp */,
+				CDCD7968E1E980F654CC5B70 /* Vendor/taglib-1.13.1/taglib/xm/xmfile.cpp */,
+				569B1D1B2D3B55903BE1F800 /* Vendor/taglib-1.13.1/taglib/xm/xmproperties.cpp */,
+			);
+			name = TagLib;
+			sourceTree = "<group>";
+		};
+		69EBBD46D9424840365DD5DB /* FLAC Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2AF3B4BDBFEC5D6C47564931 /* Vendor/flac-1.5.0/src/libFLAC/bitmath.c */,
+				4303F03C1D219F6A03F3C7C2 /* Vendor/flac-1.5.0/src/libFLAC/bitreader.c */,
+				EB2F4B9CB15B70A7F8B2C025 /* Vendor/flac-1.5.0/src/libFLAC/bitwriter.c */,
+				2C14990A255668206FB46216 /* Vendor/flac-1.5.0/src/libFLAC/cpu.c */,
+				D86963208D8AEF76B45976A2 /* Vendor/flac-1.5.0/src/libFLAC/crc.c */,
+				D08A1853609E53A7BF4DDEE3 /* Vendor/flac-1.5.0/src/libFLAC/fixed.c */,
+				8F7931C499EB01051615F087 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_avx2.c */,
+				F796419EDAF523A9856F8BAB /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse2.c */,
+				142995E0525522EBB0377E88 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse42.c */,
+				9D226B8B73B864D7CE8A76C5 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_ssse3.c */,
+				540F55BE72253AE3676B4467 /* Vendor/flac-1.5.0/src/libFLAC/float.c */,
+				84BD19BE9E24702A61479F8F /* Vendor/flac-1.5.0/src/libFLAC/format.c */,
+				7E10559AE744EB6D25BD7FBE /* Vendor/flac-1.5.0/src/libFLAC/lpc.c */,
+				600185AFDFC936B015B5E7FF /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_avx2.c */,
+				E2B629312BF371E64FCFD043 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_fma.c */,
+				7113538A9CA3D4344EBA1BBC /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_neon.c */,
+				99827F96CB64F9E64E1BF49C /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse2.c */,
+				3938C67341DB003B302F9503 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse41.c */,
+				92D22ED1779654EFB3928FF3 /* Vendor/flac-1.5.0/src/libFLAC/md5.c */,
+				C3F5BED30E7004276BACDAF1 /* Vendor/flac-1.5.0/src/libFLAC/memory.c */,
+				0B0BBD6E7A9A828578B8FDB5 /* Vendor/flac-1.5.0/src/libFLAC/metadata_iterators.c */,
+				05330DB63F85ADBE376A8A3A /* Vendor/flac-1.5.0/src/libFLAC/metadata_object.c */,
+				56302138B06FA409C48D63EC /* Vendor/flac-1.5.0/src/libFLAC/stream_decoder.c */,
+				5622AED8B07522EFA0A2885D /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder.c */,
+				E681FB98D9CCC154E68D03B1 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_framing.c */,
+				15061F3A1CA2EF9745B24453 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_avx2.c */,
+				EE37ECE165FE26E0BAF3631C /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_sse2.c */,
+				55419A6787EAC17B4BFB76B0 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_ssse3.c */,
+				D252F79D2DD90F0B4BF0C217 /* Vendor/flac-1.5.0/src/libFLAC/window.c */,
+				D3F5E155EA75862B0E357231 /* Vendor/flac-1.5.0/src/libFLAC++/metadata.cpp */,
+				CF81E68F74D0246D8BAA03A0 /* Vendor/flac-1.5.0/src/libFLAC++/stream_decoder.cpp */,
+				B9A274336520E36A5D34A1B1 /* Vendor/flac-1.5.0/src/libFLAC++/stream_encoder.cpp */,
+			);
+			name = FLAC;
+			sourceTree = "<group>";
+		};
+		D28BD0733532169204F7C3E5 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				69EBBD46D9424840365DD5DB /* FLAC Sources */,
+				5FF2829F8B31008B77228618 /* TagLib Sources */,
+				FE133386A50BDB7F28B172AA /* Vendor/README.md */,
+				B95AF3433C21382AE3CBB671 /* Vendor/config */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 		E502D0B31A739D1500BE86E2 = {
 			isa = PBXGroup;
+			sourceTree = "<group>";
 			children = (
 				E55A71A41AE6415700AB75E2 /* Frameworks */,
 				E502D0BE1A739D1500BE86E2 /* TeslaTunes */,
 				E502D0BD1A739D1500BE86E2 /* Products */,
+				D28BD0733532169204F7C3E5 /* Vendor */,
 			);
-			sourceTree = "<group>";
 		};
 		E502D0BD1A739D1500BE86E2 /* Products */ = {
 			isa = PBXGroup;
+			name = Products;
 			children = (
 				E502D0BC1A739D1500BE86E2 /* TeslaTunes.app */,
+				404407DDB24F458857DD7AEF /* libFLAC.a */,
+				1E03F2E892AC76D4E864C6CE /* libTagLib.a */,
 			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E502D0BE1A739D1500BE86E2 /* TeslaTunes */ = {
+			path = TeslaTunes;
 			isa = PBXGroup;
 			children = (
 				E59078AB1AAF9740007A26D6 /* todo and notes.txt */,
@@ -176,38 +546,35 @@
 				E58A24B41AC8E15400E8DDE4 /* utils */,
 				E502D0BF1A739D1500BE86E2 /* Supporting Files */,
 			);
-			path = TeslaTunes;
 			sourceTree = "<group>";
 		};
 		E502D0BF1A739D1500BE86E2 /* Supporting Files */ = {
 			isa = PBXGroup;
+			name = "Supporting Files";
 			children = (
 				E552F2D41AD3CD6E009A9FDE /* TeslaTunes.entitlements */,
 				E502D0C01A739D1500BE86E2 /* Info.plist */,
 				E502D0C41A739D1500BE86E2 /* main.m */,
 				E5CC88BE1AB6514E00C8951F /* Credits.html */,
 				E502D0C91A739D1500BE86E2 /* Images.xcassets */,
+				AB7D15F70236F7B1BB20EEE6 /* TeslaTunes/ThirdPartyNotices.txt */,
 			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E55A71A41AE6415700AB75E2 /* Frameworks */ = {
 			isa = PBXGroup;
+			name = Frameworks;
 			children = (
-				D47882731E692E4F00AB3980 /* LetsMove.framework */,
-				D4C763B41E627FD600433AD6 /* Sparkle.framework */,
 				E52E879A1ADD9F8F00B08A74 /* AudioToolbox.framework */,
 				E52E87981ADD9F2E00B08A74 /* AVFoundation.framework */,
-				E52E87961ADD9AA900B08A74 /* tag.framework */,
 				E58A24B81AC9282300E8DDE4 /* AppKit.framework */,
 				E5436D281AC3D44D0068E42E /* iTunesLibrary.framework */,
 			);
-			name = Frameworks;
-			path = frameworks;
 			sourceTree = "<group>";
 		};
 		E58A24B41AC8E15400E8DDE4 /* utils */ = {
 			isa = PBXGroup;
+			name = utils;
 			children = (
 				E59078A21AAAFE0E007A26D6 /* CopyConvertDirs.h */,
 				E59078A31AAAFE0E007A26D6 /* CopyConvertDirs.mm */,
@@ -216,71 +583,98 @@
 				E59078A81AAEC044007A26D6 /* Receptionist.h */,
 				E59078A91AAEC044007A26D6 /* Receptionist.m */,
 			);
-			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E502D0BB1A739D1500BE86E2 /* TeslaTunes */ = {
+		9A761FC8F7D9572AE20B9A1A /* FLAC target */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E502D0DC1A739D1600BE86E2 /* Build configuration list for PBXNativeTarget "TeslaTunes" */;
+			buildConfigurationList = E1BDA93EA3E07660BC5252F1 /* FLAC configuration list */;
 			buildPhases = (
-				E502D0B81A739D1500BE86E2 /* Sources */,
-				E502D0B91A739D1500BE86E2 /* Frameworks */,
-				E502D0BA1A739D1500BE86E2 /* Resources */,
-				E5F8767A1ADE347300F9A362 /* CopyFiles */,
+				71A7A68E6D5FE35AC20AF0FF /* FLAC Sources phase */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E5CC88BD1AB593AA00C8951F /* PBXTargetDependency */,
 			);
-			name = TeslaTunes;
-			productName = TeslaTunes;
+			name = FLAC;
+			productName = FLAC;
+			productReference = 404407DDB24F458857DD7AEF /* libFLAC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C869E21AF4486303B965CB0D /* TagLib target */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC2091917B1AF775538F731 /* TagLib configuration list */;
+			buildPhases = (
+				40007A21824F657B1FA7692F /* TagLib Sources phase */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagLib;
+			productName = TagLib;
+			productReference = 1E03F2E892AC76D4E864C6CE /* libTagLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E502D0BB1A739D1500BE86E2 /* TeslaTunes */ = {
+			buildConfigurationList = E502D0DC1A739D1600BE86E2 /* Build configuration list for PBXNativeTarget "TeslaTunes" */;
 			productReference = E502D0BC1A739D1500BE86E2 /* TeslaTunes.app */;
 			productType = "com.apple.product-type.application";
+			productName = TeslaTunes;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				E502D0B81A739D1500BE86E2 /* Sources */,
+				E502D0B91A739D1500BE86E2 /* Frameworks */,
+				E502D0BA1A739D1500BE86E2 /* Resources */,
+			);
+			dependencies = (
+				6BDEBCF523BBE224B8772AD3 /* FLAC dependency */,
+				B04CFD8E18BD3BF7C5E45195 /* TagLib dependency */,
+			);
+			name = TeslaTunes;
+			buildRules = (
+			);
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E502D0B41A739D1500BE86E2 /* Project object */ = {
+			buildConfigurationList = E502D0B71A739D1500BE86E2 /* Build configuration list for PBXProject "TeslaTunes" */;
+			targets = (
+				E502D0BB1A739D1500BE86E2 /* TeslaTunes */,
+				9A761FC8F7D9572AE20B9A1A /* FLAC target */,
+				C869E21AF4486303B965CB0D /* TagLib target */,
+			);
+			developmentRegion = English;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
 			isa = PBXProject;
+			compatibilityVersion = "Xcode 3.2";
+			productRefGroup = E502D0BD1A739D1500BE86E2 /* Products */;
+			projectDirPath = "";
 			attributes = {
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Loci Consulting";
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
-					E502D0BB1A739D1500BE86E2 = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 69PR7N5WC7;
+					E502D0BB1A739D1500BE86E2 /* TeslaTunes */ = {
+						DevelopmentTeam = R9U6Q6F846;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
 							};
 						};
-					};
-					E5CC88B71AB5927E00C8951F = {
-						CreatedOnToolsVersion = 6.3;
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
+				ORGANIZATIONNAME = "Loci Consulting";
 			};
-			buildConfigurationList = E502D0B71A739D1500BE86E2 /* Build configuration list for PBXProject "TeslaTunes" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = E502D0B31A739D1500BE86E2;
-			productRefGroup = E502D0BD1A739D1500BE86E2 /* Products */;
-			projectDirPath = "";
 			projectRoot = "";
-			targets = (
-				E502D0BB1A739D1500BE86E2 /* TeslaTunes */,
-				E5CC88B71AB5927E00C8951F /* GenGitVersioning */,
-				E55A71AA1AE64A4400AB75E2 /* GenSparkleInfo */,
-			);
+			mainGroup = E502D0B31A739D1500BE86E2;
 		};
 /* End PBXProject section */
 
@@ -292,41 +686,161 @@
 				E502D0CA1A739D1500BE86E2 /* Images.xcassets in Resources */,
 				E5CC88BF1AB6514E00C8951F /* Credits.html in Resources */,
 				E502D0CD1A739D1500BE86E2 /* Main.storyboard in Resources */,
+				DF2F09E26A1C5345171475AD /* ThirdPartyNotices.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		E55A71AB1AE64A4400AB75E2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "set -o errexit\n\n#[ $BUILD_STYLE = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\n#VERSIONTXT=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleShortVersionString)\nDOWNLOAD_BASE_URL=\"https://tattwamasi.github.io/TeslaTunes/app/\"\nRELEASENOTES_URL=\"https://github.com/tattwamasi/TeslaTunes/releases/tag/$VERSION\"\n\nARCHIVE_FILENAME=\"${PROJECT_NAME}_${VERSION}.zip\"\nDOWNLOAD_URL=\"https://github.com/tattwamasi/TeslaTunes/releases/download/${VERSION}/${ARCHIVE_FILENAME}\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --sequesterRsrc --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\n\ncat >appcast_item_${ARCHIVE_FILENAME}.xml <<EOF\n<item>\n<title>Version $VERSION</title>\n<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n<pubDate>$PUBDATE</pubDate>\n<enclosure\nurl=\"$DOWNLOAD_URL\"\nsparkle:version=\"$VERSION\"\ntype=\"application/octet-stream\"\nlength=\"$SIZE\"\n/>\n</item>\nEOF\n";
-		};
-		E5CC88BB1AB5928F00C8951F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		40007A21824F657B1FA7692F /* TagLib Sources phase */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				0CC3F3AF19363ABF2798A474 /* Vendor/taglib-1.13.1/taglib/ape/apefile.cpp in Sources */,
+				644E5889D00BBE0A70AD57E3 /* Vendor/taglib-1.13.1/taglib/ape/apefooter.cpp in Sources */,
+				96523C1F565C9E6107077F4C /* Vendor/taglib-1.13.1/taglib/ape/apeitem.cpp in Sources */,
+				02AB6C05C73312F750E85160 /* Vendor/taglib-1.13.1/taglib/ape/apeproperties.cpp in Sources */,
+				AD4F32CA789CB2DE1BA149C5 /* Vendor/taglib-1.13.1/taglib/ape/apetag.cpp in Sources */,
+				99D137AFED368563B3CBFB65 /* Vendor/taglib-1.13.1/taglib/asf/asfattribute.cpp in Sources */,
+				A226A315FE6781E0E7D13571 /* Vendor/taglib-1.13.1/taglib/asf/asffile.cpp in Sources */,
+				3515C2D233BA3A54A4FDC370 /* Vendor/taglib-1.13.1/taglib/asf/asfpicture.cpp in Sources */,
+				43E3D4D092C77E3E0FC55A51 /* Vendor/taglib-1.13.1/taglib/asf/asfproperties.cpp in Sources */,
+				FC1BED290E852261BDEDBF88 /* Vendor/taglib-1.13.1/taglib/asf/asftag.cpp in Sources */,
+				7C9BC36BFE5D1979A383EB76 /* Vendor/taglib-1.13.1/taglib/audioproperties.cpp in Sources */,
+				8AAB8B93BD9A8C8F9767C10A /* Vendor/taglib-1.13.1/taglib/fileref.cpp in Sources */,
+				195F53B4C3A84092FFD331FF /* Vendor/taglib-1.13.1/taglib/flac/flacfile.cpp in Sources */,
+				7A9EBC7C2EA4681A2A8A22B0 /* Vendor/taglib-1.13.1/taglib/flac/flacmetadatablock.cpp in Sources */,
+				191CD023919895DFBC998121 /* Vendor/taglib-1.13.1/taglib/flac/flacpicture.cpp in Sources */,
+				A461EBA6096A51CAE9C9D9E4 /* Vendor/taglib-1.13.1/taglib/flac/flacproperties.cpp in Sources */,
+				7E20A917D03FED77F0AB2938 /* Vendor/taglib-1.13.1/taglib/flac/flacunknownmetadatablock.cpp in Sources */,
+				10B3F79FE943B54AA27BFB90 /* Vendor/taglib-1.13.1/taglib/it/itfile.cpp in Sources */,
+				78B169BD9FEDDB98836BE478 /* Vendor/taglib-1.13.1/taglib/it/itproperties.cpp in Sources */,
+				A9AE2B26B64A295B6B6F9037 /* Vendor/taglib-1.13.1/taglib/mod/modfile.cpp in Sources */,
+				0512EF259754FE5E3C704116 /* Vendor/taglib-1.13.1/taglib/mod/modfilebase.cpp in Sources */,
+				E374721FFC5821CDA9EF5E56 /* Vendor/taglib-1.13.1/taglib/mod/modproperties.cpp in Sources */,
+				183C52C1F23F2E4F1073E7B9 /* Vendor/taglib-1.13.1/taglib/mod/modtag.cpp in Sources */,
+				3A344AC996B7213BE13F3A45 /* Vendor/taglib-1.13.1/taglib/mp4/mp4atom.cpp in Sources */,
+				6451FCB6ABD7031AE346658A /* Vendor/taglib-1.13.1/taglib/mp4/mp4coverart.cpp in Sources */,
+				7E4579F1B9C7843A003B1E92 /* Vendor/taglib-1.13.1/taglib/mp4/mp4file.cpp in Sources */,
+				C838B8C8C01095C44E6EEE30 /* Vendor/taglib-1.13.1/taglib/mp4/mp4item.cpp in Sources */,
+				2ED953EA59C34E8A63970C7F /* Vendor/taglib-1.13.1/taglib/mp4/mp4properties.cpp in Sources */,
+				8FEC7D6F31BAD25046FAC486 /* Vendor/taglib-1.13.1/taglib/mp4/mp4tag.cpp in Sources */,
+				927D2A7B8B3336E0D3D8A3A8 /* Vendor/taglib-1.13.1/taglib/mpc/mpcfile.cpp in Sources */,
+				A3548F9DCE1223BD4B835A97 /* Vendor/taglib-1.13.1/taglib/mpc/mpcproperties.cpp in Sources */,
+				FC05D4867D53053FD902AB3D /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1genres.cpp in Sources */,
+				90CF5300249EFF3304D81C8C /* Vendor/taglib-1.13.1/taglib/mpeg/id3v1/id3v1tag.cpp in Sources */,
+				C0C15F7C4A7FF55CE802EE9C /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/attachedpictureframe.cpp in Sources */,
+				589B3F3B41897E020F8B41D6 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/chapterframe.cpp in Sources */,
+				CC778425DD0CBF8E647906C8 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/commentsframe.cpp in Sources */,
+				D468248F65D6DE82FDCA376A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/eventtimingcodesframe.cpp in Sources */,
+				C7CAFD72D5EA51213D32009C /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/generalencapsulatedobjectframe.cpp in Sources */,
+				AF19F12DF27A1A5ACD59A26D /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/ownershipframe.cpp in Sources */,
+				E44EAB42940CFC69B2480C4B /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/podcastframe.cpp in Sources */,
+				72974315241E6838F96CEE86 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/popularimeterframe.cpp in Sources */,
+				0655CE1A01E0E85CFCB25C98 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/privateframe.cpp in Sources */,
+				5C018FE8162A223623829C13 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/relativevolumeframe.cpp in Sources */,
+				6EAE6CD83060854B9150531A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/synchronizedlyricsframe.cpp in Sources */,
+				087EC775E5573B92DFF81396 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/tableofcontentsframe.cpp in Sources */,
+				84CBCE564862E889502D7793 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/textidentificationframe.cpp in Sources */,
+				79ED407CC06467A147635548 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/uniquefileidentifierframe.cpp in Sources */,
+				B0D0870D6CC3F8A97CD7D0F9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unknownframe.cpp in Sources */,
+				43B4C4B1E8C349B07A5C9485 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/unsynchronizedlyricsframe.cpp in Sources */,
+				79499F7C4F35FC59D55C6ADF /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/frames/urllinkframe.cpp in Sources */,
+				0A65515E01BD3513D04F538A /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2extendedheader.cpp in Sources */,
+				108515E4225418854280AF95 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2footer.cpp in Sources */,
+				A2A79B0E90DFF2F20A7911CD /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2frame.cpp in Sources */,
+				4B90B670F51E2FC8F9A53FA6 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2framefactory.cpp in Sources */,
+				6C029092C8E2A0621A6A66A9 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2header.cpp in Sources */,
+				99A8A8908A8E5174D7ADFE81 /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2synchdata.cpp in Sources */,
+				DACFB33B90A0ED5E1104114B /* Vendor/taglib-1.13.1/taglib/mpeg/id3v2/id3v2tag.cpp in Sources */,
+				2D5262ECF193D1E9944C4AC4 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegfile.cpp in Sources */,
+				723E3B1836C02909AC71DF6F /* Vendor/taglib-1.13.1/taglib/mpeg/mpegheader.cpp in Sources */,
+				941538D148C72BE790D1BD83 /* Vendor/taglib-1.13.1/taglib/mpeg/mpegproperties.cpp in Sources */,
+				6BFCE8CB2A0F9C4DFF09119C /* Vendor/taglib-1.13.1/taglib/mpeg/xingheader.cpp in Sources */,
+				86C833441EC02B9843FD1BC9 /* Vendor/taglib-1.13.1/taglib/ogg/flac/oggflacfile.cpp in Sources */,
+				5FBE4503EC2C2ABA26C4E47F /* Vendor/taglib-1.13.1/taglib/ogg/oggfile.cpp in Sources */,
+				AB5B9B5F8DE19C9AFB9752BF /* Vendor/taglib-1.13.1/taglib/ogg/oggpage.cpp in Sources */,
+				04CEFDE2D89C1DB24396ACF0 /* Vendor/taglib-1.13.1/taglib/ogg/oggpageheader.cpp in Sources */,
+				9E1DBAB0D88A66767B17D719 /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusfile.cpp in Sources */,
+				134F5CE93644F2B62E300D3C /* Vendor/taglib-1.13.1/taglib/ogg/opus/opusproperties.cpp in Sources */,
+				055AFB52C852DA9715F1567F /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexfile.cpp in Sources */,
+				BF9C4CFEF4D793C2A4F4D00F /* Vendor/taglib-1.13.1/taglib/ogg/speex/speexproperties.cpp in Sources */,
+				EBBCCDA210161DD036C4B0C1 /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisfile.cpp in Sources */,
+				46C71BE61E35AD399A22EB57 /* Vendor/taglib-1.13.1/taglib/ogg/vorbis/vorbisproperties.cpp in Sources */,
+				3E8D4D7EA8723C2D82C355E3 /* Vendor/taglib-1.13.1/taglib/ogg/xiphcomment.cpp in Sources */,
+				4E148F7A49C6E298C53BCBCE /* Vendor/taglib-1.13.1/taglib/riff/aiff/aifffile.cpp in Sources */,
+				67D23CD1EE8469B040B37072 /* Vendor/taglib-1.13.1/taglib/riff/aiff/aiffproperties.cpp in Sources */,
+				65A88DD99CB57BE86C694993 /* Vendor/taglib-1.13.1/taglib/riff/rifffile.cpp in Sources */,
+				B8CE3E13703D1AC02A8A1F71 /* Vendor/taglib-1.13.1/taglib/riff/wav/infotag.cpp in Sources */,
+				E86407E215CA4C8298F93A98 /* Vendor/taglib-1.13.1/taglib/riff/wav/wavfile.cpp in Sources */,
+				2612A100B5FA7DF8D6FEDE81 /* Vendor/taglib-1.13.1/taglib/riff/wav/wavproperties.cpp in Sources */,
+				5E7C214FC4CFDC1DEB301CD3 /* Vendor/taglib-1.13.1/taglib/s3m/s3mfile.cpp in Sources */,
+				20BBA3E4707A0FC93C9D823E /* Vendor/taglib-1.13.1/taglib/s3m/s3mproperties.cpp in Sources */,
+				D9D3941652B699F67DF64AA4 /* Vendor/taglib-1.13.1/taglib/tag.cpp in Sources */,
+				AEC8B008D26D779304F08025 /* Vendor/taglib-1.13.1/taglib/tagunion.cpp in Sources */,
+				D41676FA5CB1F9E99B55911C /* Vendor/taglib-1.13.1/taglib/tagutils.cpp in Sources */,
+				6BBF0BEB2F84B21B83ACEC08 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevector.cpp in Sources */,
+				A0A04369C0219E65D8C56A82 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorlist.cpp in Sources */,
+				7C3CBEB6104F90328F9A5BE8 /* Vendor/taglib-1.13.1/taglib/toolkit/tbytevectorstream.cpp in Sources */,
+				86DB634BADE87265CBB2A87A /* Vendor/taglib-1.13.1/taglib/toolkit/tdebug.cpp in Sources */,
+				3FF616F46F3B06CF7E1A311F /* Vendor/taglib-1.13.1/taglib/toolkit/tdebuglistener.cpp in Sources */,
+				224FEE157F718BB1F111C26F /* Vendor/taglib-1.13.1/taglib/toolkit/tfile.cpp in Sources */,
+				A266804CA73D89D95E095DC1 /* Vendor/taglib-1.13.1/taglib/toolkit/tfilestream.cpp in Sources */,
+				2B3B8483C837C8F5107F5B3D /* Vendor/taglib-1.13.1/taglib/toolkit/tiostream.cpp in Sources */,
+				ECAB21C8257CC810CAA1663F /* Vendor/taglib-1.13.1/taglib/toolkit/tpropertymap.cpp in Sources */,
+				2FFAB0C8691D2E4BB2159EE3 /* Vendor/taglib-1.13.1/taglib/toolkit/trefcounter.cpp in Sources */,
+				5D6A1EE49846ADB15F87A2A9 /* Vendor/taglib-1.13.1/taglib/toolkit/tstring.cpp in Sources */,
+				CC5C4F90CE096B84D9FD703A /* Vendor/taglib-1.13.1/taglib/toolkit/tstringlist.cpp in Sources */,
+				6501B02518F8F8952E2636CE /* Vendor/taglib-1.13.1/taglib/toolkit/tzlib.cpp in Sources */,
+				87B2A465BFAA47805847E781 /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudiofile.cpp in Sources */,
+				1C18B43ED888DE90043B7A69 /* Vendor/taglib-1.13.1/taglib/trueaudio/trueaudioproperties.cpp in Sources */,
+				FDF8B733BD7EDA04DA461EBB /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackfile.cpp in Sources */,
+				47C24415A9AACA61C3C56211 /* Vendor/taglib-1.13.1/taglib/wavpack/wavpackproperties.cpp in Sources */,
+				4C7D70D779D818F347B945D3 /* Vendor/taglib-1.13.1/taglib/xm/xmfile.cpp in Sources */,
+				3ABB4803CAD5D8DC3DE4BD98 /* Vendor/taglib-1.13.1/taglib/xm/xmproperties.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "version=`git describe --dirty`\necho \"#define GIT_VERSION $version\" > InfoPlist.h\nhead=`git rev-parse --short HEAD`\necho \"#define GIT_HEAD $head\" >> InfoPlist.h\ntouch TeslaTunes/Info.plist";
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
+		71A7A68E6D5FE35AC20AF0FF /* FLAC Sources phase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5351F8133C9319840A240AE4 /* Vendor/flac-1.5.0/src/libFLAC/bitmath.c in Sources */,
+				41A791F9DF8276CC9186D53D /* Vendor/flac-1.5.0/src/libFLAC/bitreader.c in Sources */,
+				2475D1E2915F4737ACF211A2 /* Vendor/flac-1.5.0/src/libFLAC/bitwriter.c in Sources */,
+				859A775F365D9A25D28CB11B /* Vendor/flac-1.5.0/src/libFLAC/cpu.c in Sources */,
+				C934F746F45C5F2C5C57736D /* Vendor/flac-1.5.0/src/libFLAC/crc.c in Sources */,
+				039B7EF1AE38811867877BCC /* Vendor/flac-1.5.0/src/libFLAC/fixed.c in Sources */,
+				7A51EFD1B055CAB01A2C7D4F /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_avx2.c in Sources */,
+				AFE674176F755FA56CF35354 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse2.c in Sources */,
+				6728B0DB8897A0CC0BD24E16 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_sse42.c in Sources */,
+				8E895CFE5D4FC1B56E5C4549 /* Vendor/flac-1.5.0/src/libFLAC/fixed_intrin_ssse3.c in Sources */,
+				11BB6D08413A82E221358FA8 /* Vendor/flac-1.5.0/src/libFLAC/float.c in Sources */,
+				4228C6BE830720A123769DB9 /* Vendor/flac-1.5.0/src/libFLAC/format.c in Sources */,
+				F8A678C58ED95F300406B967 /* Vendor/flac-1.5.0/src/libFLAC/lpc.c in Sources */,
+				5F77235B4945BC1793BBC6E5 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_avx2.c in Sources */,
+				8C3030D8C6F74CF1084658DE /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_fma.c in Sources */,
+				B1C7E796C047774F5EC223C9 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_neon.c in Sources */,
+				9FB4EA6BC60AB50FD7CDA5E0 /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse2.c in Sources */,
+				66EFA07664BBA1CCC2D4D6FF /* Vendor/flac-1.5.0/src/libFLAC/lpc_intrin_sse41.c in Sources */,
+				A6FB37D3D76A51378BCF2543 /* Vendor/flac-1.5.0/src/libFLAC/md5.c in Sources */,
+				108584B9E1905314C949EF55 /* Vendor/flac-1.5.0/src/libFLAC/memory.c in Sources */,
+				0723E0061A72D7E3A414A054 /* Vendor/flac-1.5.0/src/libFLAC/metadata_iterators.c in Sources */,
+				BFCA200C147CC06A0AA52B9A /* Vendor/flac-1.5.0/src/libFLAC/metadata_object.c in Sources */,
+				9B64999D414767D1F40E4D64 /* Vendor/flac-1.5.0/src/libFLAC/stream_decoder.c in Sources */,
+				70FB87DFF4386F6C00E5723A /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder.c in Sources */,
+				965001A6FEC57BC7E837CA48 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_framing.c in Sources */,
+				D102DAF523193386CA38F1BE /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_avx2.c in Sources */,
+				93E498CD20D1C97BC50D5B52 /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_sse2.c in Sources */,
+				FE486063857E058BF9896BED /* Vendor/flac-1.5.0/src/libFLAC/stream_encoder_intrin_ssse3.c in Sources */,
+				D8C036C4DFB6A10C93FFF244 /* Vendor/flac-1.5.0/src/libFLAC/window.c in Sources */,
+				8F70FC49CB5963ED49068216 /* Vendor/flac-1.5.0/src/libFLAC++/metadata.cpp in Sources */,
+				0983908205BE95F53644E600 /* Vendor/flac-1.5.0/src/libFLAC++/stream_decoder.cpp in Sources */,
+				77AE5A9AE8C9FB88720F538D /* Vendor/flac-1.5.0/src/libFLAC++/stream_encoder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E502D0B81A739D1500BE86E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,286 +860,320 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E55A71B01AE64A8F00AB75E2 /* PBXTargetDependency */ = {
+		6BDEBCF523BBE224B8772AD3 /* FLAC dependency */ = {
 			isa = PBXTargetDependency;
-			target = E502D0BB1A739D1500BE86E2 /* TeslaTunes */;
-			targetProxy = E55A71AF1AE64A8F00AB75E2 /* PBXContainerItemProxy */;
+			target = 9A761FC8F7D9572AE20B9A1A /* FLAC target */;
 		};
-		E5CC88BD1AB593AA00C8951F /* PBXTargetDependency */ = {
+		B04CFD8E18BD3BF7C5E45195 /* TagLib dependency */ = {
 			isa = PBXTargetDependency;
-			target = E5CC88B71AB5927E00C8951F /* GenGitVersioning */;
-			targetProxy = E5CC88BC1AB593AA00C8951F /* PBXContainerItemProxy */;
+			target = C869E21AF4486303B965CB0D /* TagLib target */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E502D0CB1A739D1500BE86E2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
+			name = Main.storyboard;
 			children = (
 				E502D0CC1A739D1500BE86E2 /* Base */,
 			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0CF10ABB7BD9D6205EF93733 /* FLAC Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				PRODUCT_NAME = FLAC;
+				SKIP_INSTALL = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Vendor/config/flac",
+					"$(PROJECT_DIR)/Vendor/flac-1.5.0/include",
+					"$(PROJECT_DIR)/Vendor/flac-1.5.0/src/libFLAC/include",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					HAVE_CONFIG_H,
+					FLAC__NO_DLL,
+				);
+				CLANG_ENABLE_MODULES = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+			};
+		};
+		2F2D868986579ACDC2BE7C8C /* FLAC Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				PRODUCT_NAME = FLAC;
+				SKIP_INSTALL = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Vendor/config/flac",
+					"$(PROJECT_DIR)/Vendor/flac-1.5.0/include",
+					"$(PROJECT_DIR)/Vendor/flac-1.5.0/src/libFLAC/include",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					HAVE_CONFIG_H,
+					FLAC__NO_DLL,
+				);
+				CLANG_ENABLE_MODULES = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+			};
+		};
+		6C31BC2078A873E577394BE8 /* TagLib Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				PRODUCT_NAME = TagLib;
+				SKIP_INSTALL = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Vendor/config/taglib",
+					"$(PROJECT_DIR)/Vendor/taglib-1.13.1/taglib/**",
+					"$(PROJECT_DIR)/Vendor/taglib-1.13.1/3rdparty",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					HAVE_CONFIG_H,
+					TAGLIB_STATIC,
+				);
+				CLANG_ENABLE_MODULES = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+			};
+		};
+		7BD31749FF71E26474F1ED29 /* TagLib Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				PRODUCT_NAME = TagLib;
+				SKIP_INSTALL = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Vendor/config/taglib",
+					"$(PROJECT_DIR)/Vendor/taglib-1.13.1/taglib/**",
+					"$(PROJECT_DIR)/Vendor/taglib-1.13.1/3rdparty",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					HAVE_CONFIG_H,
+					TAGLIB_STATIC,
+				);
+				CLANG_ENABLE_MODULES = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+			};
+		};
 		E502D0DA1A739D1600BE86E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				SDKROOT = macosx;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				CLANG_WARN_COMMA = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-lmp4v2",
-					"-lFLAC",
-					"-lFLAC++",
-				);
-				SDKROOT = macosx;
+				ONLY_ACTIVE_ARCH = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				ARCHS = (arm64, x86_64, );
 			};
 			name = Debug;
 		};
 		E502D0DB1A739D1600BE86E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				SDKROOT = macosx;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_IDENTITY = "-";
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				CLANG_WARN_COMMA = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-lmp4v2",
-					"-lFLAC",
-					"-lFLAC++",
-				);
-				SDKROOT = macosx;
+				ONLY_ACTIVE_ARCH = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				ARCHS = (arm64, x86_64, );
 			};
 			name = Release;
 		};
 		E502D0DD1A739D1600BE86E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				DEVELOPMENT_TEAM = R9U6Q6F846;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				INFOPLIST_FILE = TeslaTunes/Info.plist;
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 69PR7N5WC7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					/Library/Frameworks/iTunesLibrary.framework,
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/frameworks",
-				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pilif.$(PRODUCT_NAME:rfc1034identifier)";
+				CODE_SIGN_STYLE = Manual;
+				MARKETING_VERSION = 1.2.6;
+				CURRENT_PROJECT_VERSION = 1;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/include,
+					"$(PROJECT_DIR)/Vendor/flac-1.5.0/include",
+					"$(PROJECT_DIR)/Vendor/config/taglib",
+					"$(PROJECT_DIR)/Vendor/taglib-1.13.1/taglib/**",
 				);
-				INFOPLIST_FILE = TeslaTunes/Info.plist;
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
-				INFOPLIST_PREFIX_HEADER = InfoPlist.h;
-				INFOPLIST_PREPROCESS = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
-					"/usr/local/lib/libFLAC++.a",
-					/usr/local/lib/libFLAC.a,
+					"$(inherited)",
+					"-lz",
+					"-framework",
+					IOKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.loci.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					FLAC__NO_DLL,
+					TAGLIB_STATIC,
+				);
 			};
 			name = Debug;
 		};
 		E502D0DE1A739D1600BE86E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				DEVELOPMENT_TEAM = R9U6Q6F846;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				INFOPLIST_FILE = TeslaTunes/Info.plist;
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 69PR7N5WC7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					/Library/Frameworks/iTunesLibrary.framework,
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/frameworks",
-				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pilif.$(PRODUCT_NAME:rfc1034identifier)";
+				CODE_SIGN_STYLE = Manual;
+				MARKETING_VERSION = 1.2.6;
+				CURRENT_PROJECT_VERSION = 1;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/include,
+					"$(PROJECT_DIR)/Vendor/flac-1.5.0/include",
+					"$(PROJECT_DIR)/Vendor/config/taglib",
+					"$(PROJECT_DIR)/Vendor/taglib-1.13.1/taglib/**",
 				);
-				INFOPLIST_FILE = TeslaTunes/Info.plist;
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
-				INFOPLIST_PREFIX_HEADER = InfoPlist.h;
-				INFOPLIST_PREPROCESS = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
-					"/usr/local/lib/libFLAC++.a",
-					/usr/local/lib/libFLAC.a,
+					"$(inherited)",
+					"-lz",
+					"-framework",
+					IOKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.loci.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		E55A71AD1AE64A4400AB75E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "GenGitVersioning copy";
-			};
-			name = Debug;
-		};
-		E55A71AE1AE64A4400AB75E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "GenGitVersioning copy";
-			};
-			name = Release;
-		};
-		E5CC88B81AB5927E00C8951F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E5CC88B91AB5927E00C8951F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					FLAC__NO_DLL,
+					TAGLIB_STATIC,
+				);
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1DC2091917B1AF775538F731 /* TagLib configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C31BC2078A873E577394BE8 /* TagLib Debug */,
+				7BD31749FF71E26474F1ED29 /* TagLib Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1BDA93EA3E07660BC5252F1 /* FLAC configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2D868986579ACDC2BE7C8C /* FLAC Debug */,
+				0CF10ABB7BD9D6205EF93733 /* FLAC Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E502D0B71A739D1500BE86E2 /* Build configuration list for PBXProject "TeslaTunes" */ = {
 			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 			buildConfigurations = (
 				E502D0DA1A739D1600BE86E2 /* Debug */,
 				E502D0DB1A739D1600BE86E2 /* Release */,
 			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		E502D0DC1A739D1600BE86E2 /* Build configuration list for PBXNativeTarget "TeslaTunes" */ = {
 			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 			buildConfigurations = (
 				E502D0DD1A739D1600BE86E2 /* Debug */,
 				E502D0DE1A739D1600BE86E2 /* Release */,
 			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E55A71AC1AE64A4400AB75E2 /* Build configuration list for PBXAggregateTarget "GenSparkleInfo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E55A71AD1AE64A4400AB75E2 /* Debug */,
-				E55A71AE1AE64A4400AB75E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5CC88BA1AB5927E00C8951F /* Build configuration list for PBXAggregateTarget "GenGitVersioning" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5CC88B81AB5927E00C8951F /* Debug */,
-				E5CC88B91AB5927E00C8951F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

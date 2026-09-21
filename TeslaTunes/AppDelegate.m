@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import <LetsMove/PFMoveApplication.h>
 
 
 
@@ -24,17 +23,6 @@
     IOPMAssertionID assertionID;
     BOOL idleDisabled;
 
-    
-}
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-
-    
-    
-    PFMoveToApplicationsFolderIfNecessary();
-    
-    //[[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:defaults];
     
 }
 

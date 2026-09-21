@@ -1,6 +1,58 @@
 # TeslaTunes
 Copy your iTunes or other music library, automatically converting Apple Lossless to Flac, to a destination for use with your Tesla Model S
 
+## Building with current Xcode
+
+Open `TeslaTunes.xcodeproj`, select the **TeslaTunes** scheme and **My Mac**,
+and build/run. Xcode and its macOS SDK are the only build requirements. All
+third-party audio dependencies are included as source under `Vendor/` and built
+as static libraries. Builds work offline and from a source ZIP without Git.
+
+Both Debug and Release produce a universal **Apple Silicon + Intel** app. The
+minimum system version is **macOS 14.6**. Local builds use ad-hoc signing, so no
+Apple developer account or signing certificate is required to compile. For
+signed distribution, select your own signing identity/team in Xcode.
+
+On first launch, allow TeslaTunes to access your Music library when macOS asks.
+The app includes the `NSAppleMusicUsageDescription` privacy declaration required
+by current SDKs. If access was denied, enable TeslaTunes in **System Settings →
+Privacy & Security → Media & Apple Music**, then quit and reopen the app.
+If access is already enabled, check that your library opens normally in Music.
+
+From Terminal:
+
+```sh
+xcodebuild -project TeslaTunes.xcodeproj -scheme TeslaTunes \
+  -configuration Release -destination 'generic/platform=macOS' \
+  -derivedDataPath build build
+```
+
+The result is `build/Build/Products/Release/TeslaTunes.app`. If Xcode was open
+before updating this project, choose the TeslaTunes scheme again and use
+**Product → Clean Build Folder** to discard old framework copies.
+
+The old Sparkle updater and the automatic move-to-Applications prompt have been
+removed. Copy the app to Applications manually if desired. Version numbers now
+come from Xcode's `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` settings.
+See [Vendor/README.md](Vendor/README.md) for dependency versions, provenance,
+licenses, and build configuration.
+
+To check conversion using generated fixtures (no music library required):
+
+```sh
+scripts/test-conversion.sh
+```
+
+This builds Release and runs the app's actual conversion function on 16-bit and
+24-bit mono/stereo ALAC, checking every decoded PCM sample, sample rate, tags,
+cover art, and cancellation. Pass an existing DerivedData directory as the first
+argument to reuse a build. On Apple Silicon with Rosetta installed,
+`TEST_ARCH=x86_64 scripts/test-conversion.sh` runs the same checks as Intel code.
+The test uses only Xcode and macOS tools. It does not exercise the playlist UI
+or access your Music library.
+
+## About the original app
+
 This is a little Mac OS X utility I wrote for personal use to simplify a reoccurring need to get new music from my home music library into the external drive I use in my Model S. My library is mostly composed of Apple Lossless tracks, but also has a number of other formats as well, chiefly mp3, aac (m4a), and a few wave files.  While it's easy enough to copy the whole library manually, there are a few issues that make that enough of a pain that I wanted something easier - thus this utility was created:
 
 1.  Unfortunately the Model S doesn't (yet) handle the Apple Lossless format - though it does handle FLAC, another lossless audio format which Apple Lossless can be converted to.

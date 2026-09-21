@@ -11,10 +11,10 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-#include <tag/tag.h>
-#include <tag/fileref.h>
-#include <tag/tfile.h>
-#include <tag/tpropertymap.h>
+#include <tag.h>
+#include <fileref.h>
+#include <tfile.h>
+#include <tpropertymap.h>
 
 
 

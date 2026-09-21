@@ -10,13 +10,13 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 
-#include <tag/tag.h>
-#include <tag/fileref.h>
-#include <tag/tfile.h>
-#include <tag/tpropertymap.h>
-#include <tag/mp4coverart.h>
-#include <tag/mp4tag.h>
-#include <tag/mp4file.h>
+#include <tag.h>
+#include <fileref.h>
+#include <tfile.h>
+#include <tpropertymap.h>
+#include <mp4coverart.h>
+#include <mp4tag.h>
+#include <mp4file.h>
 
 
 #include <FLAC++/metadata.h>
@@ -115,7 +115,7 @@ auto CopyArtFromMP4fileURL(const TagLib::FileRef& fr,
         return metadata.size();
     }
 
-    TagLib::MP4::CoverArtList cover_art_list = file->tag()->itemListMap()["covr"].toCoverArtList();
+    TagLib::MP4::CoverArtList cover_art_list = file->tag()->item("covr").toCoverArtList();
     FLAC__bool									result;
     
     if(!cover_art_list.isEmpty()) {
@@ -131,7 +131,7 @@ auto CopyArtFromMP4fileURL(const TagLib::FileRef& fr,
                 mime_type = "image/jpeg";
                 break;
             default:
-                NSLog(@"%s, unsupported cover art format: %u size %zu",
+                NSLog(@"%s, unsupported cover art format: %u size %u",
                       file->name(), cover_art.format(), cover_art.data().size());
                 return metadata.size();
         }
@@ -205,7 +205,7 @@ auto FlacMetadataFromMP4fileURL(const NSURL *mp4, std::vector<FLAC__StreamMetada
     for (auto p : props) {
         //NSLog(@"Property: \"%s\" (%u) => \"%s\"", p.first.toCString(true), p.second.size(), p.second.toString().toCString(true) );
         if (p.second.size() != 1) {
-            NSLog(@"warning: expected one, but found %zu values for tag \"%s\".", p.second.size(), p.first.toCString(true));
+            NSLog(@"warning: expected one, but found %u values for tag \"%s\".", p.second.size(), p.first.toCString(true));
         }
         if (p.first == "TRACKNUMBER") {
             // taglib seems to format the property as t/n where t is the current track number and n is the number of tracks.
