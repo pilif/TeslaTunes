@@ -7,7 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SavedFolderDefaults.h"
 
 int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        MigrateSavedFolderDefaults([NSUserDefaults standardUserDefaults]);
+    }
     return NSApplicationMain(argc, argv);
 }

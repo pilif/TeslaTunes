@@ -131,7 +131,7 @@ int sortOrderOfPlaylistKind(ITLibPlaylistKind kind) {
     NSMutableDictionary *selectedDefaults = [[NSMutableDictionary alloc] init];
     // go through the tree, creating the SelectedPlaylists dictionary, then put it into defaults
     [playlistTree enumerateTreeUsingBlock:^(PlaylistNode *node, BOOL *stop){
-        if (node.playlist && ([node.selectedState integerValue] != NSOffState)) {
+        if (node.playlist && ([node.selectedState integerValue] != NSControlStateValueOff)) {
             [selectedDefaults setObject:node.selectedState
                 forKey:[node.playlist.persistentID stringValue]];
         }
@@ -198,7 +198,7 @@ int sortOrderOfPlaylistKind(ITLibPlaylistKind kind) {
         // sort them all in.
         //
         
-        playlistTree = [[PlaylistNode alloc] initWithPlaylist:nil andState:[NSNumber numberWithInteger:NSOffState]];
+        playlistTree = [[PlaylistNode alloc] initWithPlaylist:nil andState:[NSNumber numberWithInteger:NSControlStateValueOff]];
         [playlistNodes setObject:playlistTree forKey:[NSNull null]];
         
         NSArray *sortedPlaylistNodes = [playlistNodes keysSortedByValueUsingComparator: ^(PlaylistNode *node1, PlaylistNode *node2) {
@@ -323,7 +323,7 @@ int sortOrderOfPlaylistKind(ITLibPlaylistKind kind) {
 
 /*
  
-NSInteger selectedState  NSOffState NSOnState NSMixedState
+NSInteger selectedState  NSControlStateValueOff NSControlStateValueOn NSControlStateValueMixed
  
  NSNumber *persistentID
  

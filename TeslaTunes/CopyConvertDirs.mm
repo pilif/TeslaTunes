@@ -796,7 +796,7 @@ BOOL makeDirsAsNeeded(const NSURL* d) {
         NSMutableSet *playlistFolders = [[NSMutableSet alloc] init];
         
         [playlistTree enumerateTreeUsingBlock:^(PlaylistNode* node, BOOL* stop) {
-            if (node.playlist && ([node.selectedState integerValue] == NSOnState) && node.playlist.items) {
+            if (node.playlist && ([node.selectedState integerValue] == NSControlStateValueOn) && node.playlist.items) {
                 NSURL* destinationFolderForPlaylist = [[playlistFolderURL
                                                         URLByAppendingPathComponent:sanitizeFilename(node.playlist.name)] URLByStandardizingPath];
                 // NOTE: path will end in a / if it already exists, but will not if it doesn't exist yet -
@@ -820,7 +820,6 @@ BOOL makeDirsAsNeeded(const NSURL* d) {
 }
 
 @end
-
 
 
 

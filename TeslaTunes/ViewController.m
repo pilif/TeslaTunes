@@ -63,7 +63,7 @@
         // it'll be reenabled by the isProcesing handler when processing is complete.
         sender.enabled = NO;
         sender.title = @"Stopping";
-        //sender.state = NSOnState;
+        //sender.state = NSControlStateValueOn;
         [self.ccDirs cancelOngoingOperations];
     }
 }

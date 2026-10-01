@@ -188,9 +188,9 @@
                                                                         </pathCell>
                                                                         <connections>
                                                                             <action selector="sourcePathSelected:" target="XfG-lQ-9wD" id="lxm-wM-you"/>
-                                                                            <binding destination="Qh4-r0-SEn" name="value" keyPath="values.sourcePathURL" id="O67-GO-bPx">
+                                                                            <binding destination="Qh4-r0-SEn" name="value" keyPath="values.sourcePathURLSecure" id="O67-GO-bPx">
                                                                                 <dictionary key="options">
-                                                                                    <string key="NSValueTransformerName">NSUnarchiveFromData</string>
+                                                                                    <string key="NSValueTransformerName">NSSecureUnarchiveFromData</string>
                                                                                 </dictionary>
                                                                             </binding>
                                                                         </connections>
@@ -320,9 +320,9 @@
                                                                             </pathCell>
                                                                             <connections>
                                                                                 <action selector="destinationPathSelected:" target="XfG-lQ-9wD" id="fYY-xS-2ni"/>
-                                                                                <binding destination="Qh4-r0-SEn" name="value" keyPath="values.destinationPathURL" id="fKC-wu-fYW">
+                                                                                <binding destination="Qh4-r0-SEn" name="value" keyPath="values.destinationPathURLSecure" id="fKC-wu-fYW">
                                                                                     <dictionary key="options">
-                                                                                        <string key="NSValueTransformerName">NSUnarchiveFromData</string>
+                                                                                        <string key="NSValueTransformerName">NSSecureUnarchiveFromData</string>
                                                                                     </dictionary>
                                                                                 </binding>
                                                                             </connections>

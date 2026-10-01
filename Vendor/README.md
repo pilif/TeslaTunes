@@ -21,17 +21,20 @@ These are source subsets, not complete upstream build distributions:
 - FLAC: `include`, `src/libFLAC`, and `src/libFLAC++`, plus upstream notices and
   configuration templates. No command-line programs, tests, or documentation.
 - TagLib: `taglib`, `3rdparty`, and upstream notices/configuration templates.
-- Upstream implementation files are unchanged. `config/flac/config.h` and
+- Upstream implementation files are unchanged except for the macOS branch of
+  `taglib-1.13.1/taglib/toolkit/trefcounter.h`, which uses `std::atomic<int>`
+  instead of the deprecated OSAtomic API (TeslaTunes patch, 2026-09-21).
+  `config/flac/config.h` and
   `config/taglib/{config.h,taglib_config.h}` are the local macOS configurations.
   Architecture macros are evaluated by the compiler separately for each slice.
 - FLAC includes NEON on arm64 and runtime-dispatched x86 SIMD implementations.
   Ogg-wrapped FLAC encoding/decoding is disabled; TeslaTunes produces native
   `.flac` files. TagLib's Ogg metadata support remains enabled.
-- TagLib uses compiler atomic operations and macOS system zlib. Some old
-  compatibility headers still produce deprecation warnings on current SDKs.
+- TagLib uses compiler/C++ atomic operations and macOS system zlib.
 
 To update a dependency, download and verify the upstream release, replace its
-source subset, review the platform configuration and upstream source lists,
+source subset, reapply the documented macOS atomic patch, review the platform
+configuration and upstream source lists,
 and update the Xcode target's sources/header paths. Update this document and
 the bundled notices, then run `scripts/test-conversion.sh` and build both
 Debug and Release for both architectures. The upstream build files retained

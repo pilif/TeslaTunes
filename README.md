@@ -51,6 +51,12 @@ argument to reuse a build. On Apple Silicon with Rosetta installed,
 The test uses only Xcode and macOS tools. It does not exercise the playlist UI
 or access your Music library.
 
+`scripts/test-platform-compatibility.sh` checks saved-folder migration and
+concurrent TagLib reference counting. It also accepts `TEST_ARCH=x86_64`.
+Saved source/destination folders are migrated to secure archives at startup;
+the original preferences are retained. The old non-keyed archive reader is
+used only for migration, since the secure decoder cannot read that format.
+
 ## About the original app
 
 This is a little Mac OS X utility I wrote for personal use to simplify a reoccurring need to get new music from my home music library into the external drive I use in my Model S. My library is mostly composed of Apple Lossless tracks, but also has a number of other formats as well, chiefly mp3, aac (m4a), and a few wave files.  While it's easy enough to copy the whole library manually, there are a few issues that make that enough of a pain that I wanted something easier - thus this utility was created:

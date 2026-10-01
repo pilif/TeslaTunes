@@ -27,6 +27,10 @@
 
 #include "flac_utils.h"
 
+static NSString *AudioErrorDescription(OSStatus status) {
+    return [NSError errorWithDomain:NSOSStatusErrorDomain code:status userInfo:nil].localizedDescription;
+}
+
 // used as, for example,
 // int r = signextend<signed int,5>(x);  // sign extend 5 bit number x to r
 
@@ -291,7 +295,7 @@ BOOL ConvertM4AToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *cance
 
     OSStatus result = ExtAudioFileOpenURL( (__bridge CFURLRef)a, &inFile);
     if (result != noErr) {
-        NSLog(@"Failed to open input file %s for conversion to flac. (err %i, %@)", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to open input file %s for conversion to flac. (err %i, %@)", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
     if (*cancelFlag) return NO;
@@ -304,7 +308,7 @@ BOOL ConvertM4AToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *cance
     AudioStreamBasicDescription inFile_absd;
     result = ExtAudioFileGetProperty(inFile, kExtAudioFileProperty_FileDataFormat, &dataSize, &inFile_absd);
     if (noErr != result) {
-        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
     if (*cancelFlag) return NO;
@@ -313,7 +317,7 @@ BOOL ConvertM4AToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *cance
     dataSize=sizeof(totalFrames);
     result = ExtAudioFileGetProperty(inFile, kExtAudioFileProperty_FileLengthFrames, &dataSize, &totalFrames);
     if (noErr != result) {
-        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
     if (*cancelFlag) return NO;
@@ -360,7 +364,7 @@ BOOL ConvertM4AToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *cance
 
     result = ExtAudioFileSetProperty(inFile, kExtAudioFileProperty_ClientDataFormat, sizeof(decoded_absd), &decoded_absd);
     if (noErr != result) {
-        NSLog(@"Failed to set decode properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to set decode properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
 
@@ -456,7 +460,7 @@ BOOL ConvertM4AToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *cance
         result=ExtAudioFileRead(inFile, &numFrames, decBuffers.get());
         if (result != noErr) {
             NSLog(@"error reading from %s during conversion to flac: %@ (%i)", a.fileSystemRepresentation,
-                  UTCreateStringForOSType(result), result);
+                  AudioErrorDescription(result), result);
             break;
         }
         if (*cancelFlag) break;
@@ -500,7 +504,7 @@ BOOL ConvertAlacToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *canc
 
     OSStatus result = ExtAudioFileOpenURL( (__bridge CFURLRef)a, &inFile);
     if (result != noErr) {
-        NSLog(@"Failed to open input file %s for conversion to flac. (err %i, %@)", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to open input file %s for conversion to flac. (err %i, %@)", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
     if (*cancelFlag) return NO;
@@ -513,7 +517,7 @@ BOOL ConvertAlacToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *canc
     AudioStreamBasicDescription inFile_absd;
     result = ExtAudioFileGetProperty(inFile, kExtAudioFileProperty_FileDataFormat, &dataSize, &inFile_absd);
     if (noErr != result) {
-        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
     if (*cancelFlag) return NO;
@@ -522,7 +526,7 @@ BOOL ConvertAlacToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *canc
     dataSize=sizeof(totalFrames);
     result = ExtAudioFileGetProperty(inFile, kExtAudioFileProperty_FileLengthFrames, &dataSize, &totalFrames);
     if (noErr != result) {
-        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to read properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
     if (*cancelFlag) return NO;
@@ -568,7 +572,7 @@ BOOL ConvertAlacToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *canc
 
     result = ExtAudioFileSetProperty(inFile, kExtAudioFileProperty_ClientDataFormat, sizeof(decoded_absd), &decoded_absd);
     if (noErr != result) {
-        NSLog(@"Failed to set decode properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, UTCreateStringForOSType(result));
+        NSLog(@"Failed to set decode properties of input file %s (err %i, %@).", a.fileSystemRepresentation, result, AudioErrorDescription(result));
         return NO;
     }
 
@@ -664,7 +668,7 @@ BOOL ConvertAlacToFlac(const NSURL* a, const NSURL *f, volatile const BOOL *canc
         result=ExtAudioFileRead(inFile, &numFrames, decBuffers.get());
         if (result != noErr) {
             NSLog(@"error reading from %s during conversion to flac: %@ (%i)", a.fileSystemRepresentation,
-                  UTCreateStringForOSType(result), result);
+                  AudioErrorDescription(result), result);
             break;
         }
         if (*cancelFlag) break;

@@ -30,9 +30,8 @@
 #include "taglib.h"
 
 #ifdef __APPLE__
-#  define OSATOMIC_DEPRECATED 0
-#  include <libkern/OSAtomic.h>
-#  define TAGLIB_ATOMIC_MAC
+#  include <atomic>
+#  define TAGLIB_ATOMIC_CPP
 #elif defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)
 #  ifndef NOMINMAX
 #    define NOMINMAX
@@ -80,12 +79,14 @@ namespace TagLib
   public:
     RefCounterOld() : refCount(1) {}
 
-#ifdef TAGLIB_ATOMIC_MAC
-    void ref() { OSAtomicIncrement32Barrier(const_cast<int32_t*>(&refCount)); }
-    bool deref() { return ! OSAtomicDecrement32Barrier(const_cast<int32_t*>(&refCount)); }
-    int32_t count() { return refCount; }
+    // TeslaTunes macOS patch: replace deprecated OSAtomic with C++ atomics.
+    // Sequential consistency preserves the old Barrier operations' ordering.
+#ifdef TAGLIB_ATOMIC_CPP
+    void ref() { refCount.fetch_add(1); }
+    bool deref() { return refCount.fetch_sub(1) == 1; }
+    int count() { return refCount.load(); }
   private:
-    volatile int32_t refCount;
+    std::atomic<int> refCount;
 #elif defined(TAGLIB_ATOMIC_WIN)
     void ref() { InterlockedIncrement(&refCount); }
     bool deref() { return ! InterlockedDecrement(&refCount); }
@@ -111,4 +112,3 @@ namespace TagLib
 
 #endif // DO_NOT_DOCUMENT
 #endif
-
